@@ -1,14 +1,23 @@
 body {
+    padding-top:50px;
     font:15px open sans;
     background:#eee;
     color:#888;
     background-image:url("http://placekitten.com/1920/800");
     background-attachment: fixed;
+    position:relative;
+}
+
+a {
+    -webkit-transition:all 1s ease;
+    -moz-transition:all 1s ease;
+    -o-transition:all 1s ease;
+    transition:all 1s ease-in-out;
+
 }
 
 h3 {
-    margin-bottom:20px;
-    margin-top:0px;
+    margin:50px 0 20px 0;
     text-align:center;
     font-size:30px;
     letter-spacing: 2px;
@@ -21,27 +30,29 @@ h4 {
 
 #topnav {
 /*    height:50px;*/
-    background:#333;
+    background:#000;
     color:#fff;
     text-transform:uppercase;
     border-radius: 0;
     left:0px;
     right:0px;
-    position:fixed;
     z-index:99999999999;
     border:none;
+    padding-right:15px;
 }
 
 #topnav a {
     color:#fff;
 }
 
+#topnav li {
+}
+
 #intro {
     z-index:0;
-    margin-top:50px;
-    height:600px;
+    height:650px;
     background-color:rgba(51,51,51,0.5);
-    padding-top:150px;
+    padding-top:200px;
 }
 
 #portrait {
@@ -76,6 +87,7 @@ h4 {
 
 #about img {
     max-width: 100%;
+    margin-bottom:50px;
 }
 
 #experience {
@@ -85,6 +97,7 @@ h4 {
 
 #experience div {
     padding:40px;
+    text-align: center;
 }
 
 #contact {
@@ -101,9 +114,22 @@ h4 {
     line-height: 60px;
     margin:0 1px;
     margin-bottom:-10px;
+    -webkit-transition:all 1s ease;
+    -moz-transition:all 1s ease;
+    -o-transition:all 1s ease;
+    transition:all 1s ease-in-out;
 }
 
 #contacticons span {
-    color:#fff;
     font-size:30px;
+    color:#fff;
+    -webkit-transition:all 1s ease;
+    -moz-transition:all 1s ease;
+    -o-transition:all 1s ease;
+    transition:all 1s ease-in-out;
+}
+
+#contacticons li:hover {
+    background:#888;
+    color:#000;
 }
