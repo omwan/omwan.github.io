@@ -29,7 +29,6 @@ h4 {
 }
 
 #topnav {
-/*    height:50px;*/
     background:#000;
     color:#fff;
     text-transform:uppercase;
@@ -52,6 +51,7 @@ h4 {
     z-index:0;
     height:650px;
     background-color:rgba(51,51,51,0.5);
+/*    background-color:cadetblue;*/
     padding-top:200px;
 }
 
@@ -90,6 +90,11 @@ h4 {
     margin-bottom:50px;
 }
 
+#about .content {
+    max-width:700px;
+    margin:auto;
+}
+
 #experience {
     background:#eee;
     padding:30px;
@@ -102,34 +107,26 @@ h4 {
 
 #contact {
     background:#555;
-    line-height: 200px;;
+    line-height: 220px;
 }
 
 #contacticons li {
     list-style-type: none;
     display:inline-block;
-    height:50px;
-    width:50px;
-    background:#000;
-    line-height: 60px;
-    margin:0 1px;
-    margin-bottom:-10px;
-    -webkit-transition:all 1s ease;
-    -moz-transition:all 1s ease;
-    -o-transition:all 1s ease;
-    transition:all 1s ease-in-out;
+    margin:10px 20px 0px 20px;
 }
 
-#contacticons span {
+#contacticons i {
     font-size:30px;
     color:#fff;
+    text-shadow: 0px 0px 5px #333;
     -webkit-transition:all 1s ease;
     -moz-transition:all 1s ease;
     -o-transition:all 1s ease;
     transition:all 1s ease-in-out;
 }
 
-#contacticons li:hover {
-    background:#888;
+#contacticons i:hover {
     color:#000;
+    text-shadow: 0px 0px 5px #000;
 }
