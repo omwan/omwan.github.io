@@ -1,107 +1,108 @@
-
 body {
     font:15px open sans;
     background:#eee;
     color:#888;
+    background-image:url("http://placekitten.com/1920/800");
+    background-attachment: fixed;
 }
 
 h3 {
+    margin-bottom:20px;
     margin-top:0px;
-    color:#fff;
-    text-shadow:1px 1px 5px #666;
     text-align:center;
+    font-size:30px;
+    letter-spacing: 2px;
 }
 
 h4 {
-    margin-top:0px;
-    color:#666;
+    text-align:center;
+    letter-spacing: 2px;
 }
 
-#experience h4, #activities h4 {
+#topnav {
+/*    height:50px;*/
+    background:#333;
+    color:#fff;
+    text-transform:uppercase;
+    border-radius: 0;
+    left:0px;
+    right:0px;
+    position:fixed;
+    z-index:99999999999;
+    border:none;
+}
+
+#topnav a {
     color:#fff;
 }
 
-#header {
-    height:300px;
-    background:#ccc;
+#intro {
+    z-index:0;
+    margin-top:50px;
+    height:600px;
+    background-color:rgba(51,51,51,0.5);
+    padding-top:150px;
 }
 
-.group {
-    padding:20px;
+#portrait {
 }
 
-.group .subgroup {
-    margin-top:20px;
+#portrait img {
+    height:100px;
+    width:100px;
+    border-radius: 100px;
 }
 
-#about {background:#ccccbb;}
-#experience {background:#777777;color:#ccc;}
-#projects {background:#ddddcc;}
-#activities {background:#5599aa;color:#ddd;}
-
-#sidebar.affix {
-    top: 20px;
+#banner {
+    margin-top:50px;
 }
 
-/* sidebar */
-.bs-docs-sidebar {
-    margin-top: 20px;
-    margin-bottom: 20px;
+#name {
+    color:#fff;
+    font-size:40px;
+    letter-spacing: 2px;
 }
 
-/* all links */
-.bs-docs-sidebar .nav>li>a {
-    color: #999;
-    border-right: 2px solid transparent;
-    font-size: 13px;
-    font-weight: 400;
+#major {
+    color:#ccc;
+    font-size:15px;
+    letter-spacing: 1px;
 }
 
-/* nested links */
-.bs-docs-sidebar .nav .nav>li>a {
-    font-size: 12px;
-    margin-left:10px;
-    padding:5px 10px;
+#about {
+    background:#fff;
+    padding:30px;
 }
 
-/* active & hover links */
-.bs-docs-sidebar .nav>.active>a, 
-.bs-docs-sidebar .nav>li>a:hover, 
-.bs-docs-sidebar .nav>li>a:focus {
-    color: #563d7c;                 
-    text-decoration: none;          
-    background-color: transparent;  
-    border-right-color: #563d7c; 
-}
-/* all active links */
-.bs-docs-sidebar .nav>.active>a, 
-.bs-docs-sidebar .nav>.active:hover>a,
-.bs-docs-sidebar .nav>.active:focus>a {
-    font-weight: 700;
-}
-/* nested active links */
-.bs-docs-sidebar .nav .nav>.active>a, 
-.bs-docs-sidebar .nav .nav>.active:hover>a,
-.bs-docs-sidebar .nav .nav>.active:focus>a {
-    font-weight: 500;
+#about img {
+    max-width: 100%;
 }
 
-/* hide inactive nested list */
-.bs-docs-sidebar .nav ul.nav {
-    display: none;           
-}
-/* show active nested list */
-.bs-docs-sidebar .nav>.active>ul.nav {
-    display: block;           
+#experience {
+    background:#eee;
+    padding:30px;
 }
 
-#bottom {
-    height:300px;
-    background:#333;
+#experience div {
+    padding:40px;
 }
 
-@media screen and (max-width: 500px){
-    .bs-docs-sidebar {
-        display:none
-    }
+#contact {
+    background:#555;
+    height:200px;
+    line-height: 200px;
+}
+
+#contacticons li {
+    list-style-type: none;
+    display:inline-block;
+    height:50px;
+    width:50px;
+    background:#000;
+    line-height: 50px;
+    margin:0 1px;
+}
+
+#contacticons span {
+    color:#fff;
 }

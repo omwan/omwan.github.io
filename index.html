@@ -6,245 +6,84 @@
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">  
 <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="style.css" type="text/css">
     
-<style type="text/css">
+<title>Olivia Wan</title>
 
-body {
-    font:15px open sans;
-    background:#eee;
-    color:#888;
-}
-
-h3 {
-    margin-top:0px;
-    color:#fff;
-    text-shadow:1px 1px 5px #666;
-    text-align:center;
-}
-
-h4 {
-    margin-top:0px;
-    color:#666;
-}
-
-#experience h4, #activities h4 {
-    color:#fff;
-}
-
-#header {
-    height:300px;
-    background:#ccc;
-}
-
-.group {
-    padding:20px;
-}
-
-.group .subgroup {
-    margin-top:20px;
-}
-
-#about {background:#ccccbb;}
-#experience {background:#777777;color:#ccc;}
-#projects {background:#ddddcc;}
-#activities {background:#5599aa;color:#ddd;}
-
-#sidebar.affix {
-    top: 20px;
-}
-
-/* sidebar */
-.bs-docs-sidebar {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-/* all links */
-.bs-docs-sidebar .nav>li>a {
-    color: #999;
-    border-right: 2px solid transparent;
-    font-size: 13px;
-    font-weight: 400;
-}
-
-/* nested links */
-.bs-docs-sidebar .nav .nav>li>a {
-    font-size: 12px;
-    margin-left:10px;
-    padding:5px 10px;
-}
-
-/* active & hover links */
-.bs-docs-sidebar .nav>.active>a, 
-.bs-docs-sidebar .nav>li>a:hover, 
-.bs-docs-sidebar .nav>li>a:focus {
-    color: #563d7c;                 
-    text-decoration: none;          
-    background-color: transparent;  
-    border-right-color: #563d7c; 
-}
-/* all active links */
-.bs-docs-sidebar .nav>.active>a, 
-.bs-docs-sidebar .nav>.active:hover>a,
-.bs-docs-sidebar .nav>.active:focus>a {
-    font-weight: 700;
-}
-/* nested active links */
-.bs-docs-sidebar .nav .nav>.active>a, 
-.bs-docs-sidebar .nav .nav>.active:hover>a,
-.bs-docs-sidebar .nav .nav>.active:focus>a {
-    font-weight: 500;
-}
-
-/* hide inactive nested list */
-.bs-docs-sidebar .nav ul.nav {
-    display: none;           
-}
-/* show active nested list */
-.bs-docs-sidebar .nav>.active>ul.nav {
-    display: block;           
-}
-
-#bottom {
-    height:300px;
-    background:#333;
-}
-
-@media screen and (max-width: 500px){
-    .bs-docs-sidebar {
-        display:none
-    }
-}
-
-  </style>
-
-  <title>Bootstrap Docs Sidebar by KyleMit</title>
-
-<script type='text/javascript'>//<![CDATA[
-$(window).load(function(){
-$('body').scrollspy({
-    target: '.bs-docs-sidebar',
-    offset: 0
-});
-$("#sidebar").affix({
-    offset: {
-      top: 300
-    }
-});
-});//]]> 
-
-</script>
-
-  
 </head>
 
 <body>
 
-<div class="container">
+<div class="container-fluid">
+    <nav class="navbar navbar-default" id="topnav">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            <a class="navbar-brand" href="#">Olivia Wan</a>
+        </div>
 
-<div class="row" id="header"></div>
-
-<div class="row" style="background:#fff">
-    <!--Nav Bar -->
-    <div class="col-med-3 col-xs-3">
-    <nav class="bs-docs-sidebar" role="complementary">
-        <ul id="sidebar" class="nav nav-stacked">
-            <li>
-                <a href="#about">about</a>
-                <ul class="nav nav-stacked">
-                    <li><a href="#aboutsub1">aboutsub1</a></li>
-                    <li><a href="#aboutsub2">aboutsub2</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#experience">experience</a>
-                <ul class="nav nav-stacked">
-                    <li><a href="#experiencesub1">experiencesub1</a></li>
-                    <li><a href="#experiencesub2">experiencesub2</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#projects">projects</a>
-                <ul class="nav nav-stacked">
-                    <li><a href="#projectssub1">projectssub1</a></li>
-                    <li><a href="#projectssub2">projectssub2</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#activities">activities</a>
-                <ul class="nav nav-stacked">
-                    <li><a href="#activitiessub1">activitiessub1</a></li>
-                    <li><a href="#activitiessub2">activitiessub2</a></li>
-                </ul>
-            </li>
-        </ul>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#">Service-Learning</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
     </nav>
-    </div>
-    <!--Main Content -->
-    <div class="col-med-9 col-xs-9" role="main">
-    <div class="row">
-        <div id="about" class="group">
-            <h3>about</h3>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae congue mauris. Nulla non tortor non lectus venenatis facilisis. Vestibulum fringilla nisi vestibulum elit rhoncus cursus. 
-            <div class="row">
-            <div class="col-md-4">
-                ss
+    <div class="row" id="intro">
+        <div class="col-md-12">
+            <center><div id="portrait"><img src="http://placehold.it/100x100"></div>
+                <div id="banner">
+                    <div id="name">olivia wan</div>
+                    <div id="major">computer science + biology</div>
+                </div>
+            </center>
+        </div>
+    </div><!--intro row-->
+    <div class="row" id="about">
+        <h3>about</h3>
+        <div class="col-md-4 col-xs-4">
+            <div id="actualpicture">
+                <img src="http://placehold.it/300x400">
             </div>
-            <div class="col-md-8">
-            <div id="aboutsub1" class="subgroup">
-                <h4>aboutsub1</h4>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae congue mauris. Nulla non tortor non lectus venenatis facilisis. Vestibulum fringilla nisi vestibulum elit rhoncus cursus. Phasellus interdum posuere pharetra. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis elementum, arcu non auctor tempor, tellus risus posuere libero, vulputate euismod nulla odio at ante. 
-            </div>
-            <div id="aboutsub2" class="subgroup">
-                <h4>aboutsub2</h4>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae congue mauris. Nulla non tortor non lectus venenatis facilisis. Vestibulum fringilla nisi vestibulum elit rhoncus cursus. Phasellus interdum posuere pharetra. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis elementum, arcu non auctor tempor, tellus risus posuere libero, vulputate euismod nulla odio at ante. 
-            </div>
-            </div>
-            </div>
-        </div><!--about-->
-        <div id="experience" class="group">
-            <h3>experience</h3>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae congue mauris. Nulla non tortor non lectus venenatis facilisis. Vestibulum fringilla nisi vestibulum elit rhoncus cursus. 
-            <div id="experiencesub1" class="subgroup">
-                <h4>experiencesub1</h4>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae congue mauris. Nulla non tortor non lectus venenatis facilisis. Vestibulum fringilla nisi vestibulum elit rhoncus cursus. Phasellus interdum posuere pharetra. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis elementum, arcu non auctor tempor, tellus risus posuere libero, vulputate euismod nulla odio at ante. 
-            </div>
-            <div id="experiencesub2" class="subgroup">
-                <h4>experiencesub2</h4>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae congue mauris. Nulla non tortor non lectus venenatis facilisis. Vestibulum fringilla nisi vestibulum elit rhoncus cursus. Phasellus interdum posuere pharetra. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis elementum, arcu non auctor tempor, tellus risus posuere libero, vulputate euismod nulla odio at ante. 
-            </div>
-        </div><!--about-->
-        <div id="projects" class="group">
-            <h3>projects</h3>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae congue mauris. Nulla non tortor non lectus venenatis facilisis. Vestibulum fringilla nisi vestibulum elit rhoncus cursus. 
-            <div id="projectssub1" class="subgroup">
-                <h4>projectssub1</h4>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae congue mauris. Nulla non tortor non lectus venenatis facilisis. Vestibulum fringilla nisi vestibulum elit rhoncus cursus. Phasellus interdum posuere pharetra. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis elementum, arcu non auctor tempor, tellus risus posuere libero, vulputate euismod nulla odio at ante. 
-            </div>
-            <div id="projectssub2" class="subgroup">
-                <h4>projectssub2</h4>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae congue mauris. Nulla non tortor non lectus venenatis facilisis. Vestibulum fringilla nisi vestibulum elit rhoncus cursus. Phasellus interdum posuere pharetra. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis elementum, arcu non auctor tempor, tellus risus posuere libero, vulputate euismod nulla odio at ante. 
-            </div>
-        </div><!--about-->
-        <div id="activities" class="group">
-            <h3>activities</h3>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae congue mauris. Nulla non tortor non lectus venenatis facilisis. Vestibulum fringilla nisi vestibulum elit rhoncus cursus. 
-            <div id="activitiessub1" class="subgroup">
-                <h4>activitiessub1</h4>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae congue mauris. Nulla non tortor non lectus venenatis facilisis. Vestibulum fringilla nisi vestibulum elit rhoncus cursus. Phasellus interdum posuere pharetra. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis elementum, arcu non auctor tempor, tellus risus posuere libero, vulputate euismod nulla odio at ante. 
-            </div>
-            <div id="activitiessub2" class="subgroup">
-                <h4>activitiessub2</h4>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae congue mauris. Nulla non tortor non lectus venenatis facilisis. Vestibulum fringilla nisi vestibulum elit rhoncus cursus. Phasellus interdum posuere pharetra. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis elementum, arcu non auctor tempor, tellus risus posuere libero, vulputate euismod nulla odio at ante. 
-            </div>
-        </div><!--about-->
-    </div><!--row-->
-    </div><!--col-->
-</div><!--row-->
+        </div>
+        <div class="col-md-8 col-xs-8">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquet purus eu finibus rutrum. Pellentesque id sem ac libero viverra fringilla eget et dui. Aenean in metus hendrerit, sagittis nulla et, rhoncus ipsum. Sed lobortis nunc ut nisl mollis commodo. Maecenas ac condimentum ipsum, nec dapibus nunc. Suspendisse condimentum ut nulla sed rhoncus. Nam congue ex at aliquam volutpat. Proin venenatis dictum orci, sit amet gravida ipsum consequat non. Aenean suscipit, neque at condimentum dapibus, mauris ante euismod augue, vel tincidunt mi orci nec ligula.</p>
 
-<div class="row" id="bottom">
-    
-</div><!--row-->
+            <p>Nunc sagittis ex sed diam congue, at ultrices ex mattis. Sed pharetra, augue nec fermentum congue, nisl nulla tempor lectus, sed rutrum enim eros non est. Praesent congue arcu nunc, ac elementum felis lobortis nec. Phasellus eu purus ex. Etiam blandit consequat quam id commodo. Nullam sit amet sagittis mauris. Donec placerat tempus diam, lacinia accumsan nibh pulvinar sit amet. In volutpat hendrerit ipsum, vitae hendrerit nibh iaculis ac. Nullam mollis ex id molestie lobortis. Curabitur malesuada fringilla est a vestibulum. Ut rutrum fringilla massa, at lacinia elit venenatis at.</p>
+        </div>
+    </div><!--about row-->
+    <div class="row" id="experience">
+        <h3>experience</h3>
+        <div class="col-md-4 col-sm-4">
+            <h4>exp1</h4>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquet purus eu finibus rutrum. Pellentesque id sem ac libero viverra fringilla eget et dui. Aenean in metus hendrerit, sagittis nulla et, rhoncus ipsum. Sed lobortis nunc ut nisl mollis commodo. Maecenas ac condimentum ipsum, nec dapibus nunc. Suspendisse condimentum ut nulla sed rhoncus. 
+        </div>
+        <div class="col-md-4 col-sm-4">
+            <h4>exp1</h4>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquet purus eu finibus rutrum. Pellentesque id sem ac libero viverra fringilla eget et dui. Aenean in metus hendrerit, sagittis nulla et, rhoncus ipsum. Sed lobortis nunc ut nisl mollis commodo. Maecenas ac condimentum ipsum, nec dapibus nunc. Suspendisse condimentum ut nulla sed rhoncus. 
+        </div>
+        <div class="col-md-4 col-sm-4">
+            <h4>exp1</h4>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquet purus eu finibus rutrum. Pellentesque id sem ac libero viverra fringilla eget et dui. Aenean in metus hendrerit, sagittis nulla et, rhoncus ipsum. Sed lobortis nunc ut nisl mollis commodo. Maecenas ac condimentum ipsum, nec dapibus nunc. Suspendisse condimentum ut nulla sed rhoncus. 
+        </div>
+    </div><!--experience row-->
+    <div class="row" id="contact">
+        <center>
+            <ul id="contacticons">
+                <li><span class="glyphicon glyphicon-align-left"></span></li>
+                <li><span class="glyphicon glyphicon-align-left"></span></li>
+                <li><span class="glyphicon glyphicon-align-left"></span></li>
+                <li><span class="glyphicon glyphicon-align-left"></span></li>
+            </ul>
+        </center>
+    </div><!--contact row-->
 </div><!--container-->
   
 </body>
