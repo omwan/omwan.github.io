@@ -5,6 +5,7 @@ body {
     color:#888;
     background-image:url("http://placekitten.com/1920/800");
     background-attachment: fixed;
+    background-size: cover;
     position:relative;
 }
 
@@ -14,6 +15,10 @@ a {
     -o-transition:all 1s ease;
     transition:all 1s ease-in-out;
 
+}
+
+a:hover {
+    text-decoration:none;
 }
 
 h3 {
@@ -51,8 +56,7 @@ h4 {
     z-index:0;
     height:650px;
     background-color:rgba(51,51,51,0.5);
-/*    background-color:cadetblue;*/
-    padding-top:200px;
+    padding-top:180px;
 }
 
 #portrait {
@@ -87,12 +91,11 @@ h4 {
 
 #about img {
     max-width: 100%;
-    margin-bottom:50px;
 }
 
-#about .content {
+#about .content, #expintro {
     max-width:700px;
-    margin:auto;
+    margin:50px auto;
 }
 
 #experience {
@@ -100,10 +103,12 @@ h4 {
     padding:30px;
 }
 
-#experience div {
+.exp {
     padding:40px;
     text-align: center;
 }
+
+
 
 #contact {
     background:#555;
