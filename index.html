@@ -1,16 +1,97 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Olivia Wan</title>
-        <link href="/style.css" rel="stylesheet">
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">  
-        <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    </head>
-    <body>
-        <div class="row">
-            <div class="col-md-8">ss</div>
-            <div class="col-md-4">ss</div>
+<head>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">  
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://blackrockdigital.github.io/startbootstrap-scrolling-nav/js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="http://blackrockdigital.github.io/startbootstrap-scrolling-nav/js/scrolling-nav.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://blackrockdigital.github.io/startbootstrap-scrolling-nav/css/scrolling-nav.css">
+    
+<title>Olivia Wan</title>
+    
+    <script>
+        $('body').scrollspy({target: ".navbar"})
+    </script>
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50" id="top">
+
+<div class="container-fluid">
+    <nav class="navbar-inverse navbar-default navbar-fixed-top" id="topnav">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            <a class="navbar-brand page-scroll" href="#top">Olivia Wan</a>
         </div>
-    </body>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about" class="page-scroll">about</a></li>
+            <li><a href="#experience" class="page-scroll">experience</a></li>
+            <li><a href="#contact" class="page-scroll">contact</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+    </nav>
+    <div class="row" id="intro">
+        <div class="col-md-12">
+            <center><div id="portrait"><img src="http://placehold.it/100x100"></div>
+                <div id="banner">
+                    <div id="name">olivia wan</div>
+                    <div id="major">computer science + biology</div>
+                </div>
+            </center>
+        </div>
+    </div><!--intro row-->
+    <div class="row" id="about">
+        <h3>about</h3>
+            <div id="actualpicture">
+                <center><img src="http://placehold.it/300"></center>
+            </div>
+        <div class="content">
+            <p>Hello!</p>
+            <p>My name is Olivia Wan, and I’m a first year at Northeastern University pursuing a combined degree in Computer Science and Biology. My interests are mainly geared towards computational biology and biotechnology, and I hope to enter the biotech industry upon graduation. </p>
+        </div>
+    </div><!--about row-->
+    <div class="row" id="experience">
+        <h3>experience</h3>
+        <div id="expintro">I’ve been fortunate enough to get experience in both the biological and computer science industries. Below are some quick intros to what I’ve done. To see my full resume, click <a href="/">here</a>.</div>
+        <div class="col-md-4 exp">
+            <h4>exp1</h4>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquet purus eu finibus rutrum. Pellentesque id sem ac libero viverra fringilla eget et dui. Aenean in metus hendrerit, sagittis nulla et, rhoncus ipsum. Sed lobortis nunc ut nisl mollis commodo. Maecenas ac condimentum ipsum, nec dapibus nunc. Suspendisse condimentum ut nulla sed rhoncus. 
+        </div>
+        <div class="col-md-4 exp">
+            <h4>exp1</h4>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquet purus eu finibus rutrum. Pellentesque id sem ac libero viverra fringilla eget et dui. Aenean in metus hendrerit, sagittis nulla et, rhoncus ipsum. Sed lobortis nunc ut nisl mollis commodo. Maecenas ac condimentum ipsum, nec dapibus nunc. Suspendisse condimentum ut nulla sed rhoncus. 
+        </div>
+        <div class="col-md-4 exp">
+            <h4>exp1</h4>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquet purus eu finibus rutrum. Pellentesque id sem ac libero viverra fringilla eget et dui. Aenean in metus hendrerit, sagittis nulla et, rhoncus ipsum. Sed lobortis nunc ut nisl mollis commodo. Maecenas ac condimentum ipsum, nec dapibus nunc. Suspendisse condimentum ut nulla sed rhoncus. 
+        </div>
+        
+    </div><!--experience row-->
+    <div class="row" id="contact">
+        <center>
+            <ul id="contacticons">
+                <a href="https://github.com/omwan"><li><i class="fa fa-github"></i></li></a>
+                <a href="https://www.linkedin.com/in/olivia-wan-22645ab8"><li><i class="fa fa-linkedin"></i></li></a>
+                <a href="mailto:wan.o@husky.neu.edu"><li><i class="fa fa-envelope"></i></li></a>
+            </ul>
+        </center>
+    </div><!--contact row-->
+</div><!--container-->
+  
+</body>
+
 </html>
