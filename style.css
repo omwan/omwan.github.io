@@ -1,4 +1,147 @@
 body {
-    background: #ccc;
-    font:30px calibri;
+    padding-top:50px;
+    font:15px open sans;
+    background:#eee;
+    color:#888;
+    background-image:url("http://placekitten.com/1920/800");
+    background-attachment: fixed;
+    background-size: cover;
+    position:relative;
+}
+
+a {
+    -webkit-transition:all 1s ease;
+    -moz-transition:all 1s ease;
+    -o-transition:all 1s ease;
+    transition:all 1s ease-in-out;
+
+}
+
+a:hover {
+    text-decoration:none;
+}
+
+h3 {
+    margin:50px 0 20px 0;
+    text-align:center;
+    font-size:30px;
+    letter-spacing: 2px;
+    color:#555;
+}
+
+h4 {
+    text-align:center;
+    letter-spacing: 2px;
+    color:#666;
+}
+
+#topnav {
+    background:#000;
+    color:#fff;
+    text-transform:uppercase;
+    border-radius: 0;
+    left:0px;
+    right:0px;
+    z-index:99999999999;
+    border:none;
+    padding-right:15px;
+}
+
+#topnav a {
+    color:#fff;
+}
+
+#topnav li {
+}
+
+#intro {
+    z-index:0;
+    height:650px;
+    background-color:rgba(51,51,51,0.5);
+    padding-top:180px;
+}
+
+#portrait {
+}
+
+#portrait img {
+    height:100px;
+    width:100px;
+    border-radius: 100px;
+}
+
+#banner {
+    margin-top:50px;
+}
+
+#name {
+    color:#fff;
+    font-size:40px;
+    letter-spacing: 2px;
+}
+
+#major {
+    color:#ccc;
+    font-size:15px;
+    letter-spacing: 1px;
+}
+
+#about {
+    background:#fff;
+    padding:30px;
+}
+
+#about img {
+    max-width: 100%;
+}
+
+#about .content, #expintro {
+    max-width:700px;
+    margin:50px auto;
+    text-align:center;
+    line-height: 180%;
+    font-size:16px;
+}
+
+#experience {
+    background:#eee;
+    padding:30px;
+}
+
+.exp {
+    padding:40px;
+    text-align: center;
+}
+
+
+
+#contact {
+    background:#555;
+    line-height: 220px;
+}
+
+#contacticons li {
+    list-style-type: none;
+    display:inline-block;
+    margin:10px 2px 0px 2px;
+}
+
+#contacticons i {
+    font-size:30px;
+    color:#fff;
+    height:50px;
+    width:50px;
+    line-height:50px;
+    background:#000;
+/*    text-shadow: 0px 0px 5px #333;*/
+    -webkit-transition:all 1s ease;
+    -moz-transition:all 1s ease;
+    -o-transition:all 1s ease;
+    transition:all 1s ease-in-out;
+}
+
+#contacticons i:hover {
+    color:#000;
+    background:#fff;
+/*    text-shadow: 0px 0px 5px #000;*/
 }
