@@ -22,8 +22,7 @@
                     <li ng-repeat="assignment in project.assignments">
                         <b>{{assignment.title}}:</b> {{assignment.description}}
                         Made with {{assignment.madewith}} for {{assignment.org}}, {{assignment.date}}.
-                        <a href="{{assignment.github.link}}">{{assignment.github.title}}</a>
-                        <a href="{{assignment.website.link}}">{{assignment.website.title}}</a>
+                        <a ng-repeat="link in assignment.links" href="{{link.href}}">{{link.title}}. </a>
                     </li>
                 </ul>
             </div>
