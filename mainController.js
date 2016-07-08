@@ -126,6 +126,7 @@ app.controller('mainController', ['$scope', function($scope) {
             ]
         }
     ];
+    $scope.footer = "Made with GitHub Pages and AngularJS. Olivia Wan, 2016";
 //    $http.get('projects.json').success(function(data) {
 //        $scope.projects = data;
 //    });

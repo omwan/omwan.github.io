@@ -15,7 +15,7 @@
     <body ng-app="myapp" ng-controller="mainController">
         <div class="container">
             <h1>{{title}}</h1>
-            <p>I'm a second year student at <a href="http://neu.edu">Northeastern University</a> in the <a href="http://ccis.neu.edu">College of Computer and Information Science</a>, pursuing a combined <a href="https://www.ccis.northeastern.edu/program/bs-combined-major-for-computer-science-and-biology/">BS in Computer Science and Biology</a>. I'm interested in creating and developing software, especially within a biology or biotechnology context. Check out some projects I've worked on here!</p>
+            <p>I'm a second year student at <a href="http://neu.edu">Northeastern University</a> in the <a href="http://ccis.neu.edu">College of Computer and Information Science</a>, pursuing a combined <a href="https://www.ccis.northeastern.edu/program/bs-combined-major-for-computer-science-and-biology/">BS in Computer Science and Biology</a>. I'm interested in creating and developing software, especially within a biotechnology or computational biology context. Check out some projects I've worked on here!</p>
             <div ng-repeat="project in projects">
                 <h2>{{project.header}}</h2>
                 <ul>
@@ -26,6 +26,11 @@
                     </li>
                 </ul>
             </div>
+<!--
+            <div id="footer">
+                {{footer}}
+            </div>
+-->
             <div id="icons">
                 <a ng-repeat="link in links" href="{{link.link}}" title="{{link.title}}" target="blank"><div class="fa {{link.icon}}"></div></a>
             </div>
