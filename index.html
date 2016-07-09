@@ -13,11 +13,23 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body ng-app="myapp" ng-controller="mainController">
-        <div class="container">
+        <div style="position:absolute;top:0px;left:0px;width:100%;height:100%;">
+        <div class="bio">
             <h1>{{title}}</h1>
-            <p>I'm a second year student at <a href="http://neu.edu">Northeastern University</a> in the <a href="http://ccis.neu.edu">College of Computer and Information Science</a>, pursuing a combined <a href="https://www.ccis.northeastern.edu/program/bs-combined-major-for-computer-science-and-biology/">BS in Computer Science and Biology</a>. I'm interested in creating and developing software, especially within a biotechnology or computational biology context. Check out some projects I've worked on here!</p>
-            <div ng-repeat="content in contents">
-                <h2>{{content.header}}</h2>
+            <div class="desc">
+                <div id="icon"><img src="http://unsplash.it/300"></div>
+
+                <div id="text">I'm a second year student at <a href="http://neu.edu">Northeastern University</a> in the <a href="http://ccis.neu.edu">College of Computer and Information Science</a>, pursuing a combined <a href="https://www.ccis.northeastern.edu/program/bs-combined-major-for-computer-science-and-biology/">BS in Computer Science and Biology</a>. I'm interested in creating and developing software, especially within a biotechnology or computational biology context. Check out some projects I've worked on here!</div>
+
+                <div id="icons">
+                    <a ng-repeat="link in links" href="{{link.link}}" title="{{link.title}}" target="blank"><div class="fa {{link.icon}}"></div></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div ng-repeat="content in contents" class="things">
+                <h2 id="{{$index}}">{{content.header}}</h2>
                 <ul>
                     <li ng-repeat="project in content.projects">
                         <b>{{project.title}}:</b> {{project.description}}
@@ -26,16 +38,13 @@
                     </li>
                 </ul>
             </div>
-            <div id="icons">
-                <a ng-repeat="link in links" href="{{link.link}}" title="{{link.title}}" target="blank"><div class="fa {{link.icon}}"></div></a>
-            </div>
         </div>
 <!--
         <div id="footer">
             {{footer}}
         </div>
 -->
-
+        </div><!--wrap-->
         <script src="mainController.js"></script>
     </body>
 </html>
