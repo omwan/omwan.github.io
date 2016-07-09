@@ -1,22 +1,22 @@
 [
     {
-        'title' : "linkedin",
-        'icon' : 'fa-linkedin',
-        'link' : 'http://linkedin.com/in/olivia-wan-22645ab8'
+        "title" : "linkedin",
+        "icon" : "fa-linkedin",
+        "link" : "http://linkedin.com/in/olivia-wan-22645ab8"
     },
     {
-        'title' : "github",
-        'icon' : 'fa-github',
-        'link' : 'http://github.com/omwan'
+        "title" : "github",
+        "icon" : "fa-github",
+        "link" : "http://github.com/omwan"
     },
     {
-        'title' : "email",
-        'icon' : 'fa-envelope',
-        'link' : 'mailto:wan.o@husky.neu.edu'
+        "title" : "email",
+        "icon" : "fa-envelope",
+        "link" : "mailto:wan.o@husky.neu.edu"
     },
     {
-        'title' : "resume",
-        'icon' : 'fa-user',
-        'link' : 'resume_f16.pdf'
+        "title" : "resume",
+        "icon" : "fa-user",
+        "link" : "resume_f16.pdf"
     }
 ]
