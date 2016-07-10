@@ -10,7 +10,7 @@
         <script type="text/javascript" src="app.js"></script>
         
         <!--smooth scroll script-->
-        <script type="text/javascript" src="http://www.kryogenix.org/code/browser/smoothscroll/smoothscroll.js"></script>
+<!--        <script type="text/javascript" src="http://www.kryogenix.org/code/browser/smoothscroll/smoothscroll.js"></script>-->
         
         <!--fonts-->
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
@@ -79,11 +79,13 @@
 
                     <!--project details-->
                     <div class="card-reveal">
+                        <!--close button-->
                         <span class="card-title grey-text text-darken-4">{{project.title}}<i class="material-icons right" style="position:absolute;right:20px;">close</i></span>
                         
                         <p>{{project.org}}, {{project.date}}</p>
                         <p style="text-align:left;">{{project.description}}</p>
                         
+                        <!--buttons-->
                         <span ng-repeat="made in project.madewith" id="made">{{made}}</span>
                         <div id="links">
                             <a ng-repeat="link in project.links" href="{{link.href}}">{{link.title}}</a>
@@ -94,11 +96,11 @@
 
             </div>
         </div>
-<!--
-        <div id="footer">
-            {{footer}}
+
+        <div class="footer">
+            © Olivia Wan, 2016. Made with AngularJS and Materialize CSS.
         </div>
--->
+
         </div><!--wrap-->
         <script src="mainController.js"></script>
     </body>
