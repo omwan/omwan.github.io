@@ -8,7 +8,7 @@
                 "madewith" : [
                     "HTML/CSS",
                     "Bootstrap",
-                    "MediaWiki Servers"
+                    "MediaWiki"
                 ],
                 "date" : "Summer 2016",
                 "org" : "iGEM Team",
@@ -30,7 +30,6 @@
                 "description" : "Sorts a Spotify playlist using a custom Python algorithm and attributes from Spotify's API including danceability, variance, etc to create a pleasing party experience.",
                 "madewith" : [
                     "Python",
-                    "Spotify API",
                     "Flask",
                     "Bootstrap"
                 ],

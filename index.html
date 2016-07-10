@@ -86,10 +86,8 @@
                         <p style="text-align:left;">{{project.description}}</p>
                         
                         <!--buttons-->
-                        <span ng-repeat="made in project.madewith" id="made">{{made}}</span>
-                        <div id="links">
-                            <a ng-repeat="link in project.links" href="{{link.href}}">{{link.title}}</a>
-                        </div>
+                        <span ng-repeat="made in project.madewith" id="button">{{made}}</span><br />
+                        <a ng-repeat="link in project.links" href="{{link.href}}" id="button" style="background:#aaa;">{{link.title}}</a>
                     </div>
                 </div>
 

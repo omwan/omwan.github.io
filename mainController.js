@@ -1,6 +1,6 @@
 app.controller('mainController', ['$scope', '$http', function ($scope, $http) {
     $scope.title = "Olivia Wan";
-    $scope.subtitle = "Software + Biology"
+    $scope.subtitle = "Computer Science + Biology"
     $http.get('projects.json').success(function (data) {
         $scope.contents = data;
     });
