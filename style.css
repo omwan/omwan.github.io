@@ -37,7 +37,7 @@ h1, h2, h3 {
 
 .bio {
     width:100%;
-    padding:20px 40px;
+    padding:20px 0;
     box-sizing: border-box;
     color:#aaa;
     overflow: auto;
@@ -58,6 +58,7 @@ h1, h2, h3 {
 .desc {
     max-width:800px;
     margin:auto;
+    padding:0 20px;
 }
 
 #icons {
@@ -111,10 +112,14 @@ h2 {
 
 .footer {
     background:#333;
-    color:#fff;
+    color:#ccc;
     width:100%;
     text-align: center;
     padding:20px;
+}
+
+.footer a {
+    color:#fff;
 }
 
 @media screen and (max-width: 810px) {
