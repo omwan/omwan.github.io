@@ -121,6 +121,14 @@ h2 {
     padding:3px 5px;
 }
 
+.footer {
+    background:#333;
+    color:#fff;
+    width:100%;
+    text-align: center;
+    padding:20px;
+}
+
 @media screen and (max-width: 810px) {
 
     .bio {
