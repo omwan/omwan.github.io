@@ -68,7 +68,7 @@ h1, h2, h3 {
 #icons a {
     display:inline-block;
     color:#fff;
-    margin:0 5px;
+    margin:0 10px;
 }
 
 a {
@@ -87,7 +87,7 @@ h2 {
 }
 
 #project {
-    width:calc(720px / 2);
+    width:calc((100% - 80px) / 2);
     display:inline-block;
     text-align:center;
     box-sizing: border-box;
@@ -96,11 +96,6 @@ h2 {
 
 #project img {
     max-width: 100%;
-}
-
-.card-title {
-    font-size:20px;
-    font-family:open sans;
 }
 
 #made {
@@ -129,6 +124,10 @@ h2 {
     padding:20px;
 }
 
+h3 {
+    font-size:15px;
+}
+
 @media screen and (max-width: 810px) {
 
     .bio {
@@ -153,7 +152,7 @@ h2 {
         height:100%;
         z-index:0;
         width:100%;
-        background-image:url("http://unsplash.it/1920x1080");
+        background-image:url("http://unsplash.it/1080x1920");
     }
 
     .bio div {
@@ -170,12 +169,22 @@ h2 {
         top:calc(100% - 120px);
     }
 
-    #project {
-        width:calc(100% - 40px);
-    }
-
     #container {
         padding-bottom:10px;
+        width:600px;
+        margin:auto;
+    }
+    
+    .card-title {
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #container {
+        width:100%;
+    }
+    #project {
+        width:calc(100% - 40px);
     }
 }
 
