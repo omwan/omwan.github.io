@@ -45,6 +45,10 @@
                         "title" : "Website",
                         "href" : "http://rocketleague.pub:5001"
 
+                    },
+                    {
+                        "title" : "Devpost",
+                        "href" : "http://devpost.com/software/perfect-party-playlist"
                     }
                 ],
                 "image" : "images/playlist.jpg"
