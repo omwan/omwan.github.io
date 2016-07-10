@@ -8,17 +8,19 @@ body {
     line-height: 150%;
 }
 
-.container {
+#container {
     margin:0 auto;
     max-width:800px;
     box-sizing: border-box;
     padding-top:20px;
-    padding-bottom:20px;
+    padding-bottom:50px;
 }
 
 h1 {
     color:#fff;
     letter-spacing:2px;
+    font-size:40px;
+    margin-bottom:10px;
 }
 
 #subtitle {
@@ -34,12 +36,13 @@ h1, h2, h3 {
 
 .bio {
     width:100%;
-    padding:20px;
+    padding:20px 40px;
     box-sizing: border-box;
     color:#aaa;
     overflow: auto;
     text-align: center;
     background:#333;
+    box-shadow: 0 0 20px #555;
 }
 
 .bio a {
@@ -80,25 +83,45 @@ a {
 h2 {
     text-align: center;
     margin-top:40px;
+    font-size:30px;
 }
 
 #project {
     width:calc(720px / 2);
     display:inline-block;
     text-align:center;
-    border:5px solid #000;
     box-sizing: border-box;
     margin:20px;
-    padding-bottom:20px;
 }
 
 #project img {
     max-width: 100%;
 }
 
-h3 {
-    font-weight:normal;
-    margin-bottom:0px;
+.card-title {
+    font-size:20px;
+    font-family:open sans;
+}
+
+#made {
+    display:inline-block;
+    padding:3px 5px;
+    color:#fff;
+    background:#333;
+    margin-right:5px;
+    text-transform: lowercase;
+}
+
+#links {
+    margin-top:10px;
+}
+
+#links a {
+    display:inline-block;
+    color:#fff;
+    background:#aaa;
+    margin-right:5px;
+    padding:3px 5px;
 }
 
 @media screen and (max-width: 810px) {
@@ -110,6 +133,7 @@ h3 {
         z-index:999999;
         background:rgba(0, 0, 0, 0.3);
         display:table;
+        box-shadow: none;
     }
 
     #biowrap {
@@ -146,5 +170,8 @@ h3 {
         width:calc(100% - 80px);
     }
 
+    #container {
+        padding-bottom:10px;
+    }
 }
 
