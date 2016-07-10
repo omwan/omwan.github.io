@@ -2,34 +2,54 @@
 <html>
     <head>
         <title>Olivia Wan</title>
+        <!--jQuery-->
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        
+        <!--angular scripts-->
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
         <script type="text/javascript" src="app.js"></script>
+        
+        <!--smooth scroll script-->
         <script type="text/javascript" src="http://www.kryogenix.org/code/browser/smoothscroll/smoothscroll.js"></script>
+        
+        <!--fonts-->
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+        <!--mobile scaling-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-         <!-- Compiled and minified CSS -->
+        
+        <!--materialize-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
-
-        <!-- Compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
 
+        <!--main stylesheet-->
         <link rel="stylesheet" href="style.css">
     </head>
+    
     <body ng-app="myapp" ng-controller="mainController">
+        
+        <!--background image for bio-->
         <div class="biobg"></div>
+        
+        <!--absolute positioning wrap-->
         <div style="position:absolute;top:0px;left:0px;width:100%;height:100%;">
+            
+        <!--bio-->
         <div class="bio">
-            <a href="#container"><div class="fa fa-chevron-down" id="down"></div></a>
+<!--            <a href="#container"><div class="fa fa-chevron-down" id="down"></div></a>-->
             <div id="biowrap">
+                <!--header-->
                 <h1>{{title}}</h1>
                 <div id="subtitle">{{subtitle}}</div>
+                
+                <!--description-->
                 <div class="desc">
                     <div id="text">I'm a second year student at <a href="http://neu.edu">Northeastern University</a> in the <a href="http://ccis.neu.edu">College of Computer and Information Science</a>, pursuing a combined <a href="https://www.ccis.northeastern.edu/program/bs-combined-major-for-computer-science-and-biology/">BS in Computer Science and Biology</a>. I'm interested in creating and developing software, especially within a biotechnology or computational biology context. Check out some projects I've worked on here!</div>
 
+                    <!--contact links-->
                     <div id="icons">
                         <a ng-repeat="link in links" href="{{link.link}}" title="{{link.title}}" target="blank"><div class="fa {{link.icon}}"></div></a>
                     </div>
@@ -37,31 +57,39 @@
             </div>
         </div>
 
-
+        
+        <!--project contents-->
         <div id="container">
             <div ng-repeat="content in contents" class="things">
                 <h2>{{content.header}}</h2>
 
-            <div class="card" ng-repeat="project in content.projects" id="project">
-                <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="http://unsplash.it/1000/700">
-                </div>
+                <!--project cards-->
+                <div class="card" ng-repeat="project in content.projects" id="project">
+                    
+                    <!--cover image-->
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="http://unsplash.it/1000/700">
+                    </div>
 
-                <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">{{project.title}}</span>
-                    <p>{{project.org}}, {{project.date}}</p>
-                </div>
+                    <!--project quick info-->
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">{{project.title}}</span>
+                        <p>{{project.org}}, {{project.date}}</p>
+                    </div>
 
-                <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">{{project.title}}<i class="material-icons right" style="position:absolute;right:20px;">close</i></span>
-                    <p>{{project.org}}, {{project.date}}</p>
-                    <p style="text-align:left;">{{project.description}}</p>
-                    <span ng-repeat="made in project.madewith" id="made">{{made}}</span>
-                    <div id="links">
-                        <a ng-repeat="link in project.links" href="{{link.href}}">{{link.title}}</a>
+                    <!--project details-->
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">{{project.title}}<i class="material-icons right" style="position:absolute;right:20px;">close</i></span>
+                        
+                        <p>{{project.org}}, {{project.date}}</p>
+                        <p style="text-align:left;">{{project.description}}</p>
+                        
+                        <span ng-repeat="made in project.madewith" id="made">{{made}}</span>
+                        <div id="links">
+                            <a ng-repeat="link in project.links" href="{{link.href}}">{{link.title}}</a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
 
             </div>
