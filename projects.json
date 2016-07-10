@@ -22,7 +22,8 @@
                         "href" : "http://2016.igem.org/Team:Northeastern"
 
                     }
-                ]
+                ],
+                "image" : "http://unsplash.it/1000/700"
             },
             {
                 "title" : "Perfect Party Playlist",
@@ -45,7 +46,8 @@
                         "href" : "http://rocketleague.pub:5001"
 
                     }
-                ]
+                ],
+                "image" : "images/playlist.jpg"
             }
         ]
     },
@@ -65,7 +67,8 @@
                         "title" : "GitHub",
                         "href" : "http://github.com/omwan/forbidden-island"
                     }
-                ]
+                ],
+                "image" : "images/island.jpg"
             },
             {
                 "title" : "Kruskal Maze",
@@ -80,7 +83,8 @@
                         "title" : "GitHub",
                         "href" : "http://github.com/omwan/kruskal-maze"
                     }
-                ]
+                ],
+                "image" : "images/maze.jpg"
             },
             {
                 "title" : "Tetris",
@@ -95,7 +99,8 @@
                         "title" : "GitHub",
                         "href" : "http://github.com/omwan/tetris"
                     }
-                ]
+                ],
+                "image" : "images/tetris.jpg"
             },
             {
                 "title" : "Battleship",
@@ -115,7 +120,8 @@
                         "title" : "Website",
                         "href" : "http://omwan.github.io/battleship"
                     }
-                ]
+                ],
+                "image" : "images/battleship.jpg"
             }
         ]
     }
