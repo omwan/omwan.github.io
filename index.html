@@ -5,6 +5,7 @@
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
         <script type="text/javascript" src="app.js"></script>
+        <script type="text/javascript" src="http://www.kryogenix.org/code/browser/smoothscroll/smoothscroll.js"></script>
         <!-- Compiled and minified CSS -->
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
@@ -13,30 +14,32 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body ng-app="myapp" ng-controller="mainController">
+        <div class="biobg"></div>
         <div style="position:absolute;top:0px;left:0px;width:100%;height:100%;">
         <div class="bio">
-            <h1>{{title}}</h1>
-            <div class="desc">
-                <div id="icon"><img src="http://unsplash.it/300"></div>
+            <a href="#cont"><div class="fa fa-chevron-down" id="down"></div></a>
+            <div id="biowrap">
+                <h1>{{title}}</h1>
+                <div id="subtitle">{{subtitle}}</div>
+                <div class="desc">
+                    <div id="text">I'm a second year student at <a href="http://neu.edu">Northeastern University</a> in the <a href="http://ccis.neu.edu">College of Computer and Information Science</a>, pursuing a combined <a href="https://www.ccis.northeastern.edu/program/bs-combined-major-for-computer-science-and-biology/">BS in Computer Science and Biology</a>. I'm interested in creating and developing software, especially within a biotechnology or computational biology context. Check out some projects I've worked on here!</div>
 
-                <div id="text">I'm a second year student at <a href="http://neu.edu">Northeastern University</a> in the <a href="http://ccis.neu.edu">College of Computer and Information Science</a>, pursuing a combined <a href="https://www.ccis.northeastern.edu/program/bs-combined-major-for-computer-science-and-biology/">BS in Computer Science and Biology</a>. I'm interested in creating and developing software, especially within a biotechnology or computational biology context. Check out some projects I've worked on here!</div>
-
-                <div id="icons">
-                    <a ng-repeat="link in links" href="{{link.link}}" title="{{link.title}}" target="blank"><div class="fa {{link.icon}}"></div></a>
+                    <div id="icons">
+                        <a ng-repeat="link in links" href="{{link.link}}" title="{{link.title}}" target="blank"><div class="fa {{link.icon}}"></div></a>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="container">
+
+        <div class="container" id="cont">
             <div ng-repeat="content in contents" class="things">
-                <h2 id="{{$index}}">{{content.header}}</h2>
-                <ul>
-                    <li ng-repeat="project in content.projects">
-                        <b>{{project.title}}:</b> {{project.description}}
-                        Made with {{project.madewith}} for {{project.org}}, {{project.date}}.
-                        <a ng-repeat="link in project.links" href="{{link.link}}">{{link.title}}. </a>
-                    </li>
-                </ul>
+                <h2>{{content.header}}</h2>
+                <div ng-repeat="project in content.projects" id="project">
+                    <img src="http://unsplash.it/1000/700">
+                    <h3>{{project.title}}</h3>
+                    {{project.org}}, {{project.date}}.
+                </div>
             </div>
         </div>
 <!--

@@ -9,17 +9,26 @@ body {
 }
 
 .container {
-    margin:50px auto 100px auto;
+    margin:0 auto;
     max-width:800px;
-    padding:0 20px;
+    box-sizing: border-box;
+    padding-top:20px;
+    padding-bottom:20px;
 }
 
 h1 {
     color:#fff;
-    line-height:50px;
+    letter-spacing:2px;
 }
 
-h1, h2 {
+#subtitle {
+    margin:0px;
+    margin-top:-10px;
+    letter-spacing:2px;
+    margin-bottom:20px;
+}
+
+h1, h2, h3 {
     font-family: open sans;
 }
 
@@ -27,10 +36,10 @@ h1, h2 {
     width:100%;
     padding:20px;
     box-sizing: border-box;
-    background:#555;
     color:#aaa;
     overflow: auto;
     text-align: center;
+    background:#333;
 }
 
 .bio a {
@@ -40,14 +49,6 @@ h1, h2 {
 #down {
     font-size:30px;
     width:100%;
-}
-
-#icon img {
-    display:block;
-    float:left;
-    width:100px;
-    margin-right:20px;
-    border-radius: 100px;
 }
 
 .desc {
@@ -72,20 +73,78 @@ a {
     color:#0066cc;
 }
 
-@media screen and (max-width: 768px) {
+#down {
+    display:none;
+}
 
-    #icon img {
-        float:none;
-        display:block;
-        margin:20px auto;
-    }
+h2 {
+    text-align: center;
+    margin-top:40px;
+}
+
+#project {
+    width:calc(720px / 2);
+    display:inline-block;
+    text-align:center;
+    border:5px solid #000;
+    box-sizing: border-box;
+    margin:20px;
+    padding-bottom:20px;
+}
+
+#project img {
+    max-width: 100%;
+}
+
+h3 {
+    font-weight:normal;
+    margin-bottom:0px;
+}
+
+@media screen and (max-width: 810px) {
 
     .bio {
         height:100%;
         box-sizing: border-box;
-        padding:25% 20px;
+        padding:0 60px;
+        z-index:999999;
+        background:rgba(0, 0, 0, 0.3);
+        display:table;
     }
 
+    #biowrap {
+        display:table-cell;
+        vertical-align:middle;
+    }
+
+    .biobg {
+        position:absolute;
+        top:0px;
+        left:0px;
+        height:100%;
+        z-index:0;
+        width:100%;
+        background-image:url("http://unsplash.it/1920x1080");
+    }
+
+    .bio div {
+        margin-top:30px;
+/*        margin:50px 0;*/
+    }
+
+    #down {
+        display:block;
+        position:absolute;
+        font-size:30px;
+        width:100%;
+        left:0px;
+        top:calc(100% - 120px);
+    }
+
+    #project {
+        margin:20px 40px;
+        width:calc(100% - 80px);
+    }
 
 }
 
