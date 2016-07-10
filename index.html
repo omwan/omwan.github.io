@@ -87,7 +87,7 @@
                         
                         <!--buttons-->
                         <span ng-repeat="made in project.madewith" id="button">{{made}}</span><br />
-                        <a ng-repeat="link in project.links" href="{{link.href}}" id="button" style="background:#aaa;">{{link.title}}</a>
+                        <a ng-repeat="link in project.links" href="{{link.href}}" id="button" style="background:#aaa;" target="blank">{{link.title}}</a>
                     </div>
                 </div>
 
@@ -96,7 +96,7 @@
         </div>
 
         <div class="footer">
-            © Olivia Wan, 2016. Made with AngularJS and Materialize CSS.
+            {{footer}}
         </div>
 
         </div><!--wrap-->
