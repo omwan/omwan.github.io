@@ -38,6 +38,7 @@ h1, h2, h3 {
 .bio {
     width:100%;
     padding:20px 0;
+    padding-bottom:50px;
     box-sizing: border-box;
     color:#aaa;
     overflow: auto;
@@ -70,12 +71,26 @@ h1, h2, h3 {
 #icons a {
     display:inline-block;
     color:#fff;
-    margin:0 10px;
+    background:#000;
+    width:50px;
+    height:50px;
+    text-align: center;
+    line-height: 50px;
+    margin:0 5px;
+}
+
+#icons a:hover {
+    color:#000;
+    background:#fff;
 }
 
 a {
     text-decoration:none;
     color:#0066cc;
+    -webkit-transition:all 1s ease;
+    -moz-transition:all 1s ease;
+    -o-transition:all 1s ease;
+    transition:all 1s ease-in-out;
 }
 
 #down {

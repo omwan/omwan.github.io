@@ -39,7 +39,7 @@
             
         <!--bio-->
         <div class="bio">
-<!--            <a href="#container"><div class="fa fa-chevron-down" id="down"></div></a>-->
+            <a href="#container"><div class="fa fa-chevron-down" id="down"></div></a>
             <div id="biowrap">
                 <!--header-->
                 <h1>{{title}}</h1>
@@ -48,11 +48,6 @@
                 <!--description-->
                 <div class="desc">
                     <div id="text">I'm a second year student at <a href="http://neu.edu">Northeastern University</a> in the <a href="http://ccis.neu.edu">College of Computer and Information Science</a>, pursuing a combined <a href="https://www.ccis.northeastern.edu/program/bs-combined-major-for-computer-science-and-biology/">BS in Computer Science and Biology</a>. I'm interested in creating and developing software, especially within a biotechnology or computational biology context. Check out some projects I've worked on here!</div>
-
-                    <!--contact links-->
-                    <div id="icons">
-                        <a ng-repeat="link in links" href="{{link.link}}" title="{{link.title}}" target="blank"><div class="fa {{link.icon}}"></div></a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -96,8 +91,10 @@
         </div>
 
         <div class="footer">
-            {{footer}} <br />
-            <a href="#">back to top</a>
+            <!--contact links-->
+            <div id="icons">
+                <a ng-repeat="link in links" href="{{link.link}}" title="{{link.title}}" target="blank"><div class="fa {{link.icon}}"></div></a>
+            </div>
         </div>
 
         </div><!--wrap-->
