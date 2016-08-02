@@ -1,6 +1,7 @@
 [
     {
         "header" : "Extracurricular Projects",
+        "notes" : "These projects were made for various hackathons or clubs, outside of class assignments.",
         "projects" : [
             {
                 "title" : "iGEM Wiki",
@@ -56,6 +57,7 @@
     },
     {
         "header" : "Class Assignments",
+        "notes" : "These projects were made as final projects for various programming/computer science classes I've taken. Note that some may have private GitHub repos to  avoid plagiarism issues; to view the code shoot me an email.",
         "projects" : [
             {
                 "title" : "Forbidden Island",

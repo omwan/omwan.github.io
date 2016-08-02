@@ -58,6 +58,10 @@
             <div ng-repeat="content in contents" class="things">
                 <h2>{{content.header}}</h2>
 
+                <div class="projdesc" style="text-align:center;padding:0 20px;">
+                    {{content.notes}}
+                </div>
+
                 <!--project cards-->
                 <div class="card" ng-repeat="project in content.projects" id="project">
                     
