@@ -88,20 +88,25 @@
                         <span ng-repeat="made in project.madewith" id="button">{{made}}</span><br />
                         <a ng-repeat="link in project.links" href="{{link.href}}" id="button" style="background:#aaa;" target="blank">{{link.title}}</a>
                     </div>
-                </div>
+
+                </div><!--project-->
+
+            </div><!--section-->
+
+        </div><!--container-->
 
 
-            </div>
-        </div>
-
+        <!--footer-->
         <div class="footer">
             <!--contact links-->
             <div id="icons">
                 <a ng-repeat="link in links" href="{{link.link}}" title="{{link.title}}" target="blank"><div class="fa {{link.icon}}"></div></a>
-            </div>
-        </div>
+            </div><!--icons-->
+        </div><!--footer-->
 
         </div><!--wrap-->
+
+        <!--angular controller-->
         <script src="mainController.js"></script>
     </body>
 </html>
