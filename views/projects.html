@@ -1,0 +1,28 @@
+<div ng-repeat="content in contents" class="things">
+
+    <h2>{{content.header}}</h2>
+    <div class="projdesc" style="text-align:center;padding:0 20px;"> {{content.notes}} </div>
+
+    <!--project cards-->
+    <div class="card" ng-repeat="project in content.projects" id="project">
+
+        <!--cover image-->
+        <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="{{project.image}}" style="border-bottom:1px solid #eee;"> </div>
+
+        <!--project quick info-->
+        <div class="card-content"> <span class="card-title activator grey-text text-darken-4">{{project.title}}</span>
+            <p>{{project.org}}, {{project.date}}</p>
+        </div>
+
+        <!--project details-->
+        <div class="card-reveal">
+            <!--close button--><span class="card-title grey-text text-darken-4">{{project.title}}<i class="material-icons right" style="position:absolute;right:20px;">close</i></span>
+            <p>{{project.org}}, {{project.date}}</p>
+            <p style="text-align:left;">{{project.description}}</p>
+            <!--buttons--><span ng-repeat="made in project.madewith" id="button">{{made}}</span>
+            <br /> <a ng-repeat="link in project.links" href="{{link.href}}" id="button" style="background:#aaa;" target="blank">{{link.title}}</a>
+        </div>
+
+    </div><!--project-->
+
+</div><!--section-->
