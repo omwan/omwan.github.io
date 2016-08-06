@@ -10,10 +10,10 @@ body {
 
 #container {
     margin:0 auto;
+    margin-top:50px;
     max-width:800px;
     box-sizing: border-box;
-    padding-top:20px;
-    padding-bottom:50px;
+    padding:20px;
 }
 
 h1 {
@@ -37,18 +37,52 @@ h1, h2, h3 {
 
 .bio {
     width:100%;
-    padding:20px 0;
-    padding-bottom:50px;
     box-sizing: border-box;
     color:#aaa;
     overflow: auto;
     text-align: center;
-    background:#333;
-    box-shadow: 0 0 20px #555;
+    height:400px;
+    display:table;
+    background:rgba(0, 0, 0, 0.5);
+}
+
+#biowrap {
+    display:table-cell;
+    vertical-align:middle;
+}
+
+.biobg {
+    height:400px;
+    background-image:url("http://unsplash.it/1920/1080");
+    background-attachment: fixed;
+    background-size:cover;
+    background-attachment: fixed;
 }
 
 .bio a {
     color:#fff;
+}
+
+.navigation {
+    position:absolute;
+    color:#000;
+    height:50px;
+    background:#000;
+    text-align: center;
+    line-height:50px;
+    width:100%;
+    z-index:99999;
+}
+
+.navigation a  {
+    display:inline-block;
+    padding: 0 20px;
+    color:#fff;
+}
+
+.navigation a:hover {
+    background:#555;
+    color:#000;
 }
 
 #down {
@@ -60,10 +94,6 @@ h1, h2, h3 {
     max-width:800px;
     margin:auto;
     padding:0 20px;
-}
-
-.navigation {
-    margin-top:20px;
 }
 
 #icons {
@@ -126,6 +156,19 @@ h2 {
     max-width: 100%;
 }
 
+#navcards {
+    margin-top:20px;
+    margin-bottom:-20px;
+}
+
+#navcards .card  {
+    margin-bottom:50px;
+}
+
+#navcards .card-title {
+    text-shadow: .5px .5px .2px #000;
+}
+
 #button {
     display:inline-block;
     padding:3px 5px;
@@ -155,15 +198,8 @@ h2 {
         box-sizing: border-box;
         padding:0 60px;
         z-index:999999;
-        background:rgba(0, 0, 0, 0.5);
-        display:table;
         box-shadow: none;
         color:#bbb;
-    }
-
-    #biowrap {
-        display:table-cell;
-        vertical-align:middle;
     }
 
     .biobg {
@@ -173,12 +209,10 @@ h2 {
         height:100%;
         z-index:0;
         width:100%;
-        background-image:url("http://unsplash.it/1080/1920");
     }
 
     .bio div {
         margin-top:30px;
-/*        margin:50px 0;*/
     }
 
     #down {

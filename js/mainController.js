@@ -7,16 +7,16 @@ app.controller('mainController', ['$scope', '$http', function ($scope, $http) {
     });
     $scope.navigation = [
         {
-            'title' : "home",
-            'href' : "/",
-        },
-        {
             'title' : "about",
-            'href' : "/about"
+            'href' : "#/about"
         },
         {
             'title' : "projects",
-            'href' : "/projects"
+            'href' : "#/projects"
+        },
+        {
+            'title' : "blog",
+            'href' : "#/blog"
         }
     ];
 }]);
