@@ -191,7 +191,7 @@ h2 {
         width:700px;
         margin:auto;
     }
-    
+
     .card-title {
     }
 }
@@ -203,7 +203,7 @@ h2 {
     #project {
         width:calc(100% - 40px);
     }
-    
+
     .bio {
         padding:0 20px;
     }
