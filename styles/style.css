@@ -62,6 +62,10 @@ h1, h2, h3 {
     padding:0 20px;
 }
 
+.navigation {
+    margin-top:20px;
+}
+
 #icons {
     text-align: center;
     font-size: 30px;

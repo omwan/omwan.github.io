@@ -5,4 +5,18 @@ app.controller('mainController', ['$scope', '$http', function ($scope, $http) {
     $http.get('js/links.json').success(function (data) {
         $scope.links = data;
     });
+    $scope.navigation = [
+        {
+            'title' : "home",
+            'href' : "/",
+        },
+        {
+            'title' : "about",
+            'href' : "/about"
+        },
+        {
+            'title' : "projects",
+            'href' : "/projects"
+        }
+    ];
 }]);
