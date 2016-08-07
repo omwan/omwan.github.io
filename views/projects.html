@@ -1,7 +1,9 @@
-<div ng-repeat="content in contents" style="margin:0 -20px;margin-bottom:50px;">
+<div id="container" class="projcont"><center>
+
+<div ng-repeat="content in contents" style="margin-left:-20px;margin-right:-20px;">
 
     <h2>{{content.header}}</h2>
-    <div class="projdesc" style="text-align:center;"> {{content.notes}} </div>
+    <div class="projdesc" style="text-align:center;width:800px;"> {{content.notes}} </div>
 
     <!--project cards-->
     <div class="card" ng-repeat="project in content.projects" id="project">
@@ -26,3 +28,5 @@
     </div><!--project-->
 
 </div><!--section-->
+
+</center></div>

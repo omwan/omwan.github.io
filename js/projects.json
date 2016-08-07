@@ -1,61 +1,5 @@
 [
     {
-        "header" : "Extracurricular Projects",
-        "notes" : "These projects were made for various hackathons or clubs, outside of class assignments.",
-        "projects" : [
-            {
-                "title" : "iGEM Wiki",
-                "description" : "Designed and coded an online Wiki for 2015-16 Northeastern iGEM Team documenting development and progress of custom bioengineering research project. (WIP)",
-                "madewith" : [
-                    "HTML/CSS",
-                    "Bootstrap",
-                    "MediaWiki"
-                ],
-                "date" : "Summer 2016",
-                "org" : "iGEM Team",
-                "links": [
-                    {
-                        "title" : "GitHub",
-                        "href" : "https://github.com/omwan/iGEM-wiki-neu16"
-                    },
-                    {
-                        "title" : "Website",
-                        "href" : "http://2016.igem.org/Team:Northeastern"
-
-                    }
-                ],
-                "image" : "images/wiki.PNG"
-            },
-            {
-                "title" : "Perfect Party Playlist",
-                "description" : "Sorts a Spotify playlist using a custom Python algorithm and attributes from Spotify's API including danceability, variance, etc to create a pleasing party experience.",
-                "madewith" : [
-                    "Python",
-                    "Flask",
-                    "Bootstrap"
-                ],
-                "date" : "Winter 2016",
-                "org" : "HuskyHacks 2016",
-                "links" : [
-                    {
-                        "title" : "GitHub",
-                        "href" : "https://github.com/omwan/playlist"
-                    },
-                    {
-                        "title" : "Website",
-                        "href" : "http://rocketleague.pub:5001"
-
-                    },
-                    {
-                        "title" : "Devpost",
-                        "href" : "http://devpost.com/software/perfect-party-playlist"
-                    }
-                ],
-                "image" : "images/playlist.jpg"
-            }
-        ]
-    },
-    {
         "header" : "Class Assignments",
         "notes" : "These projects were made as final projects for various programming/computer science classes I've taken. Note that some may have private GitHub repos to  avoid plagiarism issues; to view the code shoot me an email.",
         "projects" : [
@@ -127,6 +71,62 @@
                     }
                 ],
                 "image" : "images/battleship.jpg"
+            }
+        ]
+    },
+    {
+        "header" : "Extracurricular Projects",
+        "notes" : "These projects were made for various hackathons or clubs, outside of class assignments.",
+        "projects" : [
+            {
+                "title" : "iGEM Wiki",
+                "description" : "Designed and coded an online Wiki for 2015-16 Northeastern iGEM Team documenting development and progress of custom bioengineering research project. (WIP)",
+                "madewith" : [
+                    "HTML/CSS",
+                    "Bootstrap",
+                    "MediaWiki"
+                ],
+                "date" : "Summer 2016",
+                "org" : "iGEM Team",
+                "links": [
+                    {
+                        "title" : "GitHub",
+                        "href" : "https://github.com/omwan/iGEM-wiki-neu16"
+                    },
+                    {
+                        "title" : "Website",
+                        "href" : "http://2016.igem.org/Team:Northeastern"
+
+                    }
+                ],
+                "image" : "images/wiki.PNG"
+            },
+            {
+                "title" : "Perfect Party Playlist",
+                "description" : "Sorts a Spotify playlist using a custom Python algorithm and attributes from Spotify's API including danceability, variance, etc to create a pleasing party experience.",
+                "madewith" : [
+                    "Python",
+                    "Flask",
+                    "Bootstrap"
+                ],
+                "date" : "Winter 2016",
+                "org" : "HuskyHacks 2016",
+                "links" : [
+                    {
+                        "title" : "GitHub",
+                        "href" : "https://github.com/omwan/playlist"
+                    },
+                    {
+                        "title" : "Website",
+                        "href" : "http://rocketleague.pub:5001"
+
+                    },
+                    {
+                        "title" : "Devpost",
+                        "href" : "http://devpost.com/software/perfect-party-playlist"
+                    }
+                ],
+                "image" : "images/playlist.jpg"
             }
         ]
     }

@@ -55,9 +55,15 @@
         
         <!--absolute positioning wrap-->
         <div style="position:absolute;top:0px;left:0px;width:100%;height:100%;">
+
+        <!--banner nav-->
+        <div class="navigation" id="stick">
+            <a href="/#/">home</a>
+            <a ng-repeat="nav in navigation" href="{{nav.href}}">{{nav.title}}</a>
+        </div>
             
         <!--bio-->
-        <div class="bio" style="margin:0px;">
+        <div class="bio" style="margin:0px;margin-bottom:50px;">
             <a href="#container"><div class="fa fa-chevron-down" id="down"></div></a>
             <div id="biowrap">
                 <!--header-->
@@ -66,20 +72,8 @@
             </div>
         </div>
 
-        <!--banner nav-->
-        <div class="navigation" id="stick">
-            <a href="/#/">home</a>
-            <a ng-repeat="nav in navigation" href="{{nav.href}}">{{nav.title}}</a>
-        </div>
-
-        
         <!--main content-->
-        <div id="container">
-
-            <div ng-view></div>
-
-        </div><!--container-->
-
+        <div ng-view></div>
 
         <!--footer-->
         <div class="footer">
