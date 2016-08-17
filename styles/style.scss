@@ -10,6 +10,15 @@ $desktop-size: 800px;
 $tablet-size: 700px;
 $phone-size: 100%;
 
+@mixin transition($time) {
+    text-decoration: none;
+    color: $body-links;
+    -webkit-transition: all $time ease;
+    -moz-transition: all $time ease;
+    -o-transition: all $time ease;
+    transition: all $time ease-in-out;
+}
+
 html, body {
     height: 100%;
 }
@@ -20,12 +29,7 @@ body {
     line-height: 150%;
 
     a {
-        text-decoration: none;
-        color: $body-links;
-        -webkit-transition: all 1s ease;
-        -moz-transition: all 1s ease;
-        -o-transition: all 1s ease;
-        transition: all 1s ease-in-out;
+        @include transition(1s);
     }
 }
 
@@ -70,14 +74,14 @@ h1, h2, h3 {
     }
 
 //    description
-    a {
-        color: #fff;
-    }
-
     .desc {
         max-width: 800px;
         margin: auto;
         padding: 0 20px;
+
+        a {
+            color: #fff;
+        }
     }
 
 //    arrow for mobile view
@@ -123,10 +127,19 @@ h1, h2, h3 {
         display: inline-block;
         padding: 3px 5px;
         color: #fff;
-        background: #333;
         margin-right: 5px;
         margin-bottom: 5px;
         text-transform: lowercase;
+    }
+
+    #made  {
+        @extend #button;
+        background:#333;
+    }
+
+    #link {
+        @extend #made;
+        background:#aaa;
     }
 
 }

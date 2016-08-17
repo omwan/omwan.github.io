@@ -44,12 +44,12 @@ h1, h2, h3 {
     letter-spacing: 2px;
     margin-bottom: 20px;
     text-transform: lowercase; }
-  .bio a {
-    color: #fff; }
   .bio .desc {
     max-width: 800px;
     margin: auto;
     padding: 0 20px; }
+    .bio .desc a {
+      color: #fff; }
   .bio #down {
     display: none; }
 
@@ -70,14 +70,17 @@ h1, h2, h3 {
   margin: 20px; }
   .things #project img {
     max-width: 100%; }
-.things #button {
+.things #button, .things #made, .things #link {
   display: inline-block;
   padding: 3px 5px;
   color: #fff;
-  background: #333;
   margin-right: 5px;
   margin-bottom: 5px;
   text-transform: lowercase; }
+.things #made, .things #link {
+  background: #333; }
+.things #link {
+  background: #aaa; }
 
 .footer {
   background: #333;
