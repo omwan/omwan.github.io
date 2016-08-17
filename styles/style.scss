@@ -1,0 +1,236 @@
+$header-font: open sans;
+$body-font: roboto;
+
+$body-links: #0066cc;
+$body-text: #888;
+$topbar-headers: #fff;
+$hf-background: #333;
+
+$desktop-size: 800px;
+$tablet-size: 700px;
+$phone-size: 100%;
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: $body-font;
+    font-size: 15px;
+    line-height: 150%;
+
+    a {
+        text-decoration: none;
+        color: $body-links;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        transition: all 1s ease-in-out;
+    }
+}
+
+#container {
+    margin: 0 auto;
+    max-width: $desktop-size;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+h1, h2, h3 {
+    font-family: $header-font;
+}
+
+//header bar
+.bio {
+    width: 100%;
+    padding: 20px 0;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+    color: #aaa;
+    overflow: auto;
+    text-align: center;
+    background: $hf-background;
+    box-shadow: 0 0 20px #555;
+
+//    titles
+    h1 {
+        color: $topbar-headers;
+        letter-spacing: 3px;
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    #subtitle {
+        margin: 0px;
+        margin-top: -10px;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+        text-transform: lowercase;
+    }
+
+//    description
+    a {
+        color: #fff;
+    }
+
+    .desc {
+        max-width: 800px;
+        margin: auto;
+        padding: 0 20px;
+    }
+
+//    arrow for mobile view
+    #down {
+        display: none;
+    }
+}
+
+//project cards
+.things {
+
+//    section headers
+    h2 {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 30px;
+    }
+
+//    section descriptions
+    .projdesc {
+        text-align: center;
+        padding: 0 20px;
+        font-size: 13px;
+        color: $body-text;
+    }
+
+//    individual cards
+    #project {
+        width: calc((100% - 80px) / 2);
+        display: inline-block;
+        text-align: center;
+        box-sizing: border-box;
+        margin: 20px;
+
+        img {
+            max-width: 100%;
+        }
+
+    }
+
+//    info buttons
+    #button {
+        display: inline-block;
+        padding: 3px 5px;
+        color: #fff;
+        background: #333;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        text-transform: lowercase;
+    }
+
+}
+
+//footer bar
+.footer {
+    background: $hf-background;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+
+//    footer icons
+    #icons {
+        text-align: center;
+        font-size: 30px;
+        margin: 20px 0;
+
+        a {
+            display: inline-block;
+            color: #fff;
+            background: #000;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            margin: 0 5px;
+        }
+
+        a:hover {
+            color: #000;
+            background: #fff;
+        }
+
+    }
+}
+
+//mobile views
+@media screen and (max-width: 810px) {
+
+//    header
+    .bio {
+        height: 100%;
+        box-sizing: border-box;
+        padding: 0 60px;
+        z-index: 999999;
+        background: rgba(0, 0, 0, 0.5);
+        display: table;
+        box-shadow: none;
+        color: #bbb;
+
+        div {
+            margin-top: 30px;
+        }
+    }
+
+    #biowrap {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+//    header bg image
+    .biobg {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        z-index: 0;
+        width: 100%;
+        background-image: url("http://unsplash.it/1080/1920");
+    }
+
+//    arrow button
+    #down {
+        font-size: 30px;
+        width: 100%;
+        display: block;
+        position: absolute;
+        font-size: 30px;
+        width: 100%;
+        left: 0px;
+        top: calc(100% - 120px);
+    }
+
+    #container {
+        padding-bottom: 10px;
+        width: $tablet-size;
+        margin: auto;
+    }
+
+}
+
+//stuff for rly small screens
+@media screen and (max-width: 700px) {
+
+    #container {
+        width: $phone-size;
+    }
+
+    #project {
+        width: calc(100% - 40px);
+    }
+
+    .bio {
+        padding: 0 20px;
+    }
+
+}
