@@ -1,157 +1,207 @@
-html, body {
-  height: 100%; }
+html,
+body {
+    height: 100%;
+}
 
 body {
-  font-family: roboto;
-  font-size: 15px;
-  line-height: 150%; }
-  body a {
+    font-family: roboto;
+    font-size: 15px;
+    line-height: 150%;
+}
+
+body a {
     text-decoration: none;
     color: #0066cc;
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
-    transition: all 1s ease-in-out; }
+    transition: all 1s ease-in-out;
+}
 
 #container {
-  margin: 0 auto;
-  max-width: 800px;
-  box-sizing: border-box;
-  padding-top: 20px;
-  padding-bottom: 50px; }
+    margin: 0 auto;
+    max-width: 800px;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
 
-h1, h2, h3 {
-  font-family: open sans; }
+h1,
+h2,
+h3 {
+    font-family: open sans;
+}
 
 .bio {
-  width: 100%;
-  padding: 20px 0;
-  padding-bottom: 50px;
-  box-sizing: border-box;
-  color: #aaa;
-  overflow: auto;
-  text-align: center;
-  background: #333;
-  box-shadow: 0 0 20px #555; }
-  .bio h1 {
+    width: 100%;
+    padding: 20px 0;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+    color: #aaa;
+    overflow: auto;
+    text-align: center;
+    background: #333;
+    box-shadow: 0 0 20px #555;
+}
+
+.bio h1 {
     color: #fff;
     letter-spacing: 3px;
     font-size: 40px;
-    margin-bottom: 10px; }
-  .bio #subtitle {
+    margin-bottom: 10px;
+}
+
+.bio #subtitle {
     margin: 0px;
     margin-top: -10px;
     letter-spacing: 2px;
     margin-bottom: 20px;
-    text-transform: lowercase; }
-  .bio .desc {
+    text-transform: lowercase;
+}
+
+.bio .desc {
     max-width: 800px;
     margin: auto;
-    padding: 0 20px; }
-    .bio .desc a {
-      color: #fff; }
-  .bio #down {
-    display: none; }
+    padding: 0 20px;
+}
+
+.bio .desc a {
+    color: #fff;
+}
+
+.bio #down {
+    display: none;
+}
 
 .things h2 {
-  text-align: center;
-  margin-top: 40px;
-  font-size: 30px; }
+    text-align: center;
+    margin-top: 40px;
+    font-size: 30px;
+}
+
 .things .projdesc {
-  text-align: center;
-  padding: 0 20px;
-  font-size: 13px;
-  color: #888; }
+    text-align: center;
+    padding: 0 20px;
+    font-size: 13px;
+    color: #888;
+}
+
 .things #project {
-  width: calc((100% - 80px) / 2);
-  display: inline-block;
-  text-align: center;
-  box-sizing: border-box;
-  margin: 20px; }
-  .things #project img {
-    max-width: 100%; }
-.things #button, .things #made, .things #link {
-  display: inline-block;
-  padding: 3px 5px;
-  color: #fff;
-  margin-right: 5px;
-  margin-bottom: 5px;
-  text-transform: lowercase; }
-.things #made, .things #link {
-  background: #333; }
+    width: calc((100% - 80px) / 2);
+    display: inline-block;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 20px;
+}
+
+.things #project img {
+    max-width: 100%;
+}
+
+.things #button,
+.things #made,
 .things #link {
-  background: #aaa; }
+    display: inline-block;
+    padding: 3px 5px;
+    color: #fff;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    text-transform: lowercase;
+}
+
+.things #made,
+.things #link {
+    background: #333;
+}
+
+.things #link {
+    background: #aaa;
+}
 
 .footer {
-  background: #333;
-  width: 100%;
-  text-align: center;
-  padding: 20px; }
-  .footer #icons {
+    background: #333;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer #icons {
     text-align: center;
     font-size: 30px;
-    margin: 20px 0; }
-    .footer #icons a {
-      display: inline-block;
-      color: #fff;
-      background: #000;
-      width: 50px;
-      height: 50px;
-      text-align: center;
-      line-height: 50px;
-      margin: 0 5px; }
-    .footer #icons a:hover {
-      color: #000;
-      background: #fff; }
+    margin: 20px 0;
+}
+
+.footer #icons a {
+    display: inline-block;
+    color: #fff;
+    background: #000;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    margin: 0 5px;
+}
+
+.footer #icons a:hover {
+    color: #000;
+    background: #fff;
+}
 
 @media screen and (max-width: 810px) {
-  .bio {
-    height: 100%;
-    box-sizing: border-box;
-    padding: 0 60px;
-    z-index: 999999;
-    background: rgba(0, 0, 0, 0.5);
-    display: table;
-    box-shadow: none;
-    color: #bbb; }
+    .bio {
+        height: 100%;
+        box-sizing: border-box;
+        padding: 0 60px;
+        z-index: 999999;
+        background: rgba(0, 0, 0, 0.5);
+        display: table;
+        box-shadow: none;
+        color: #bbb;
+    }
     .bio div {
-      margin-top: 30px; }
+        margin-top: 30px;
+    }
+    #biowrap {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .biobg {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        z-index: 0;
+        width: 100%;
+        background-image: url("http://unsplash.it/1080/1920");
+    }
+    #down {
+        font-size: 30px;
+        width: 100%;
+        display: block;
+        position: absolute;
+        font-size: 30px;
+        width: 100%;
+        left: 0px;
+        top: calc(100% - 120px);
+    }
+    #container {
+        padding-bottom: 10px;
+        width: 700px;
+        margin: auto;
+    }
+}
 
-  #biowrap {
-    display: table-cell;
-    vertical-align: middle; }
-
-  .biobg {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    z-index: 0;
-    width: 100%;
-    background-image: url("http://unsplash.it/1080/1920"); }
-
-  #down {
-    font-size: 30px;
-    width: 100%;
-    display: block;
-    position: absolute;
-    font-size: 30px;
-    width: 100%;
-    left: 0px;
-    top: calc(100% - 120px); }
-
-  #container {
-    padding-bottom: 10px;
-    width: 700px;
-    margin: auto; } }
 @media screen and (max-width: 700px) {
-  #container {
-    width: 100%; }
+    #container {
+        width: 100%;
+    }
+    #project {
+        width: calc(100% - 40px);
+    }
+    .bio {
+        padding: 0 20px;
+    }
+}
 
-  #project {
-    width: calc(100% - 40px); }
-
-  .bio {
-    padding: 0 20px; } }
 
 /*# sourceMappingURL=style.css.map */
