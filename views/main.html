@@ -1,14 +1,10 @@
-<div id="container" class="maincont">
+<div class="maincont">
 
-<div id="navcards">
-
-    <div class="card" ng-repeat="nav in navigation">
-        <a href="{{nav.href}}"><div class="card-image">
-            <img src="http://unsplash.it/1000/300">
-            <span class="card-title">{{nav.title}}</span>
-        </div></a>
-    </div>
-
+<div class="card" id="navcard" ng-repeat="nav in navigation">
+    <a href="{{nav.href}}"><div class="card-image">
+        <img src="http://unsplash.it/1000/300">
+        <span class="card-title">{{nav.title}}</span>
+    </div></a>
 </div>
 
 </div>
