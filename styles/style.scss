@@ -110,7 +110,6 @@ h1, h2, h3 {
 
 //    individual cards
     #project {
-        width: calc((100% - 80px) / 2);
         display: inline-block;
         text-align: center;
         box-sizing: border-box;
@@ -173,6 +172,12 @@ h1, h2, h3 {
             background: #fff;
         }
 
+    }
+}
+
+@media screen and (min-width: 700px) {
+    #project  {
+        width: calc((100% - 80px) / 2);
     }
 }
 
@@ -239,7 +244,7 @@ h1, h2, h3 {
     }
 
     #project {
-        width: calc(100% - 40px);
+        width:calc(100% - 40px);
     }
 
     .bio {
