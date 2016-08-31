@@ -147,6 +147,10 @@ body {
                 opacity: 1;
             }
         }
+
+        #mobilephoto {
+            display:none;
+        }
     }}
 }
 
@@ -154,5 +158,11 @@ body {
     #projects { .col-lg-6 {
         border-top:10px solid #aaaaff;
         font-size:13px;
+
+        #desktopphoto {
+            display:none;
+        }
     }}
+
+
 }
