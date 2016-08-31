@@ -1,0 +1,132 @@
+@mixin transition($time) {
+    -webkit-transition: all $time ease;
+    -moz-transition: all $time ease;
+    -o-transition: all $time ease;
+    transition: all $time ease-in-out;
+}
+
+body {
+    font-family:roboto;
+    font-size:15px;
+    background:#000;
+    
+    a, a:hover {
+        text-decoration: none;
+        @include transition(1s);
+    }
+}
+
+.container-fluid {
+}
+
+#header {
+    background:#333;
+    color:#ccc;
+    padding:50px 0;
+    text-align: center;
+    
+    a {
+        color:#fff;
+    }
+    
+    h1 {
+        font-family:open sans;
+        font-size:50px;
+        color:#fff;
+        margin-bottom:20px;
+    }
+}
+
+#projects {
+    color:#fff;
+    height:100%;
+    
+    .col-md-6 {
+        padding:0px;
+        
+        * {
+            @include transition(1s);
+        }
+        
+        img {
+            width:100%;
+            display:block;
+        }
+    
+        .description {
+            height:100%;
+            overflow: auto;
+            display:table-cell;
+            vertical-align: middle;
+            z-index: 999;
+            position:absolute;
+            width:100%;
+            opacity:0;
+            box-sizing: border-box;
+            padding:50px;
+            
+            p a {
+                color:#aaaaff;
+                text-decoration: underline;
+            }
+        }
+        
+        &:hover {
+            img {
+                opacity:0.5;
+                -webkit-filter: blur(2px);
+            }
+            
+            .description {
+                opacity: 1;
+            }
+        }
+    }
+    
+    #buttons {
+        margin-bottom:5px;
+        
+        a, span {
+            display:inline-block;
+            padding:3px 10px;
+            color:#fff;
+            text-transform: lowercase;
+        }
+    }
+    
+    #mades {
+        @extend #buttons;
+        margin-top:20px;
+        
+        span {
+            background:#888;
+        }
+    }
+    
+    #links {
+        @extend #buttons;
+        a {
+            background:#333;
+        }
+    }
+    
+    #contacts {
+        a {
+            display: inline-block;
+            font-size:30px;
+            width:50px;
+            height:50px;
+            padding:10px;
+            background:#000;
+            color:#fff;
+            text-align: center;
+            margin:0px 5px;
+            
+            &:hover {
+                color:#000;
+                background:#fff;
+            }
+        }
+    }
+    
+}

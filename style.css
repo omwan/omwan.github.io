@@ -1,0 +1,84 @@
+body {
+  font-family: roboto;
+  font-size: 15px;
+  background: #000; }
+  body a, body a:hover {
+    text-decoration: none;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease-in-out; }
+
+#header {
+  background: #333;
+  color: #ccc;
+  padding: 50px 0;
+  text-align: center; }
+  #header a {
+    color: #fff; }
+  #header h1 {
+    font-family: open sans;
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 20px; }
+
+#projects {
+  color: #fff;
+  height: 100%; }
+  #projects .col-md-6 {
+    padding: 0px; }
+    #projects .col-md-6 * {
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      transition: all 1s ease-in-out; }
+    #projects .col-md-6 img {
+      width: 100%;
+      display: block; }
+    #projects .col-md-6 .description {
+      height: 100%;
+      overflow: auto;
+      display: table-cell;
+      vertical-align: middle;
+      z-index: 999;
+      position: absolute;
+      width: 100%;
+      opacity: 0;
+      box-sizing: border-box;
+      padding: 50px; }
+      #projects .col-md-6 .description p a {
+        color: #aaaaff;
+        text-decoration: underline; }
+    #projects .col-md-6:hover img {
+      opacity: 0.5;
+      -webkit-filter: blur(2px); }
+    #projects .col-md-6:hover .description {
+      opacity: 1; }
+  #projects #buttons, #projects #mades, #projects #links {
+    margin-bottom: 5px; }
+    #projects #buttons a, #projects #mades a, #projects #links a, #projects #buttons span, #projects #mades span, #projects #links span {
+      display: inline-block;
+      padding: 3px 10px;
+      color: #fff;
+      text-transform: lowercase; }
+  #projects #mades {
+    margin-top: 20px; }
+    #projects #mades span {
+      background: #888; }
+  #projects #links a {
+    background: #333; }
+  #projects #contacts a {
+    display: inline-block;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    margin: 0px 5px; }
+    #projects #contacts a:hover {
+      color: #000;
+      background: #fff; }
+
+/*# sourceMappingURL=style.css.map */
