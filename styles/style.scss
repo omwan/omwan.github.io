@@ -129,6 +129,7 @@ body {
     #projects { .col-lg-6 {
         .description {
             position:absolute;
+            opacity:0;
         }
 
         &:hover {
