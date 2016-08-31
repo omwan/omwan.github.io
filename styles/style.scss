@@ -16,9 +16,6 @@ body {
     }
 }
 
-.container-fluid {
-}
-
 #header {
     background:#333;
     color:#ccc;
@@ -131,9 +128,8 @@ body {
 
 }
 
-@media screen and (max-width: 1200px) {
-    .col-md-6 {
-
-        width:100%;
-    }
+@media screen and (max-width: 1400px) {
+    #projects { .col-lg-6 { .description {
+        padding:20px;
+    }}}
 }

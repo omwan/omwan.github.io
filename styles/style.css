@@ -81,8 +81,8 @@ body {
       color: #000;
       background: #fff; }
 
-@media screen and (max-width: 1200px) {
-  .col-md-6 {
-    width: 100%; } }
+@media screen and (max-width: 1400px) {
+  #projects .col-lg-6 .description {
+    padding: 20px; } }
 
 /*# sourceMappingURL=style.css.map */
