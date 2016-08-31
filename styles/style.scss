@@ -31,6 +31,7 @@ body {
         font-size:50px;
         color:#fff;
         margin-bottom:20px;
+        letter-spacing: 3px;
     }
 }
 
@@ -56,9 +57,9 @@ body {
             display:table-cell;
             vertical-align: middle;
             z-index: 999;
-            position:absolute;
+//            position:absolute;
             width:100%;
-            opacity:0;
+//            opacity:0;
             box-sizing: border-box;
             padding:50px;
 
@@ -68,16 +69,6 @@ body {
             }
         }
 
-        &:hover {
-            img {
-                opacity:0.5;
-                -webkit-filter: blur(2px);
-            }
-
-            .description {
-                opacity: 1;
-            }
-        }
     }
 
     #buttons {
@@ -132,4 +123,30 @@ body {
     #projects { .col-lg-6 { .description {
         padding:20px;
     }}}
+}
+
+@media screen and (min-width: 768px) {
+    #projects { .col-lg-6 {
+        .description {
+            position:absolute;
+        }
+
+        &:hover {
+            img {
+                opacity:0.5;
+                -webkit-filter: blur(2px);
+            }
+
+            .description {
+                opacity: 1;
+            }
+        }
+    }}
+}
+
+@media screen and (max-width: 768px) {
+    #projects { .col-lg-6 {
+        border-top:10px solid #aaaaff;
+        font-size:13px;
+    }}
 }

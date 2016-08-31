@@ -20,7 +20,8 @@ body {
     font-family: open sans;
     font-size: 50px;
     color: #fff;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    letter-spacing: 3px; }
 
 #projects {
   color: #fff;
@@ -41,19 +42,12 @@ body {
       display: table-cell;
       vertical-align: middle;
       z-index: 999;
-      position: absolute;
       width: 100%;
-      opacity: 0;
       box-sizing: border-box;
       padding: 50px; }
       #projects .col-lg-6 .description p a {
         color: #aaaaff;
         text-decoration: underline; }
-    #projects .col-lg-6:hover img {
-      opacity: 0.5;
-      -webkit-filter: blur(2px); }
-    #projects .col-lg-6:hover .description {
-      opacity: 1; }
   #projects #buttons, #projects #mades, #projects #links {
     margin-bottom: 5px; }
     #projects #buttons a, #projects #mades a, #projects #links a, #projects #buttons span, #projects #mades span, #projects #links span {
@@ -84,5 +78,17 @@ body {
 @media screen and (max-width: 1400px) {
   #projects .col-lg-6 .description {
     padding: 20px; } }
+@media screen and (min-width: 768px) {
+  #projects .col-lg-6 .description {
+    position: absolute; }
+  #projects .col-lg-6:hover img {
+    opacity: 0.5;
+    -webkit-filter: blur(2px); }
+  #projects .col-lg-6:hover .description {
+    opacity: 1; } }
+@media screen and (max-width: 768px) {
+  #projects .col-lg-6 {
+    border-top: 10px solid #aaaaff;
+    font-size: 13px; } }
 
 /*# sourceMappingURL=style.css.map */
