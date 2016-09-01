@@ -1,7 +1,6 @@
 body {
     font-family: roboto;
     font-size: 15px;
-    background: #000;
 }
 
 body a,
@@ -11,6 +10,12 @@ body a:hover {
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
     transition: all 1s ease-in-out;
+}
+
+.container-fluid {
+    background-image: url("http://unsplash.it/1920/1200");
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 #header {
@@ -34,11 +39,11 @@ body a:hover {
 
 #projects {
     color: #fff;
-    height: 100%;
 }
 
 #projects .col-lg-6 {
     padding: 0px;
+    background: #000;
 }
 
 #projects .col-lg-6 * {
@@ -95,25 +100,37 @@ body a:hover {
     background: #333;
 }
 
-#projects #footer {
+#footer {
+    text-align: center;
+}
+
+#footer #linksout {
+    background: #333;
     padding: 50px 0;
 }
 
-#projects #contacts a {
+#footer #contacts a {
     display: inline-block;
     font-size: 30px;
-    width: 56px;
-    height: 56px;
+    width: 50px;
+    height: 50px;
     padding: 10px;
-    border: 3px solid #fff;
+    background: #000;
     color: #fff;
     text-align: center;
     margin: 0px 5px;
 }
 
-#projects #contacts a:hover {
-    color: #aaa;
+#footer #contacts a:hover {
+    color: #000;
     background: #fff;
+}
+
+#footer #copyright {
+    background: #222;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
 }
 
 @media screen and (max-width: 1400px) {
