@@ -41,12 +41,9 @@ body a:hover {
     color: #fff;
 }
 
-#projects .row {
-    background: #000;
-}
-
 #projects .col-lg-6 {
     padding: 0px;
+    background: #000;
 }
 
 #projects .col-lg-6 img {
@@ -132,7 +129,7 @@ body a:hover {
 
 #footer #copyright {
     background: #222;
-    color: #fff;
+    color: #888;
     height: 50px;
     line-height: 50px;
 }
