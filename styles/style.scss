@@ -50,13 +50,10 @@ body {
     .col-lg-6 {
         padding:0px;
 
-        * {
-            @include transition(1s);
-        }
-
         img {
             width:100%;
             display:block;
+            @include transition(1s);
         }
 
         .description {
@@ -69,6 +66,7 @@ body {
             width:100%;
             box-sizing: border-box;
             padding:50px;
+            @include transition(1s);
 
             p a {
                 color:#aaaaff;
