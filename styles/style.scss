@@ -5,13 +5,15 @@
     transition: all $time ease-in-out;
 }
 
+$transition-time: .3s;
+
 body {
     font-family:roboto;
     font-size:15px;
 
     a, a:hover {
         text-decoration: none;
-        @include transition(.3s);
+        @include transition($transition-time);
     }
 }
 
@@ -50,7 +52,7 @@ body {
         img {
             width:100%;
             display:block;
-            @include transition(.3s);
+            @include transition($transition-time);
         }
 
         .description {
@@ -63,7 +65,7 @@ body {
             width:100%;
             box-sizing: border-box;
             padding:50px;
-            @include transition(.3s);
+            @include transition($transition-time);
 
             p a {
                 color:#aaaaff;
