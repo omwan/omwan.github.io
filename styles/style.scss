@@ -63,7 +63,7 @@ body {
             width:100%;
             box-sizing: border-box;
             padding:50px;
-            @include transition(1s);
+            @include transition(.3s);
 
             p a {
                 color:#aaaaff;
