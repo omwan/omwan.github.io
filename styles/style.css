@@ -6,10 +6,10 @@ body {
 body a,
 body a:hover {
     text-decoration: none;
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    transition: all 1s ease-in-out;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease-in-out;
 }
 
 .container-fluid {
@@ -49,10 +49,10 @@ body a:hover {
 #projects .col-lg-6 img {
     width: 100%;
     display: block;
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    transition: all 1s ease-in-out;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease-in-out;
 }
 
 #projects .col-lg-6 .description {
@@ -99,6 +99,11 @@ body a:hover {
 
 #projects #links a {
     background: #333;
+}
+
+#projects #links a:hover {
+    color: #000;
+    background: #fff;
 }
 
 #footer {

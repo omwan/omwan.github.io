@@ -11,7 +11,7 @@ body {
 
     a, a:hover {
         text-decoration: none;
-        @include transition(1s);
+        @include transition(.3s);
     }
 }
 
@@ -50,7 +50,7 @@ body {
         img {
             width:100%;
             display:block;
-            @include transition(1s);
+            @include transition(.3s);
         }
 
         .description {
@@ -98,6 +98,11 @@ body {
 
         a {
             background:#333;
+        }
+
+        a:hover {
+            color:#000;
+            background:#fff;
         }
     }
 
