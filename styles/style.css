@@ -1,6 +1,7 @@
 body {
   font-family: roboto;
-  font-size: 15px; }
+  font-size: 15px;
+  background: #000; }
   body a, body a:hover {
     text-decoration: none;
     -webkit-transition: all 0.3s ease;
@@ -9,9 +10,7 @@ body {
     transition: all 0.3s ease-in-out; }
 
 .container-fluid {
-  background-image: url("http://unsplash.it/1920/1200");
-  background-attachment: fixed;
-  background-size: cover; }
+  background: transparent; }
 
 #header {
   background: #333;
@@ -96,10 +95,14 @@ body {
     height: 50px;
     line-height: 50px; }
 
+#more {
+  margin: 50px 0;
+  text-align: center; }
+
 @media screen and (max-width: 1400px) {
   #projects .col-lg-6 .description {
     padding: 20px; } }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   #projects .col-lg-6 .description {
     position: absolute;
     opacity: 0; }
@@ -115,6 +118,9 @@ body {
     border-top: 10px solid #aaaaff;
     font-size: 13px; }
     #projects .col-lg-6 #desktopphoto {
-      display: none; } }
+      display: none; }
+
+  #more {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */

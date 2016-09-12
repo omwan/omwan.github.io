@@ -10,6 +10,7 @@ $transition-time: .3s;
 body {
     font-family:roboto;
     font-size:15px;
+    background:#000;
 
     a, a:hover {
         text-decoration: none;
@@ -18,9 +19,7 @@ body {
 }
 
 .container-fluid {
-    background-image: url('http://unsplash.it/1920/1200');
-    background-attachment: fixed;
-    background-size: cover;
+    background:transparent;
 }
 
 #header {
@@ -146,6 +145,11 @@ body {
     }
 }
 
+#more {
+    margin:50px 0;
+    text-align:center;
+}
+
 //laptop screens
 @media screen and (max-width: 1400px) {
     #projects { .col-lg-6 { .description {
@@ -154,7 +158,7 @@ body {
 }
 
 //computer screens
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
     #projects { .col-lg-6 {
         .description {
             position:absolute;
@@ -188,4 +192,8 @@ body {
             display:none;
         }
     }}
+
+    #more {
+        display:none;
+    }
 }
