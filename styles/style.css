@@ -1525,61 +1525,61 @@
 .grey, #header, #experience {
   background-color: #9e9e9e !important; }
 
-.grey-text, #experience .card-subtitle {
+.grey-text {
   color: #9e9e9e !important; }
 
 .grey.lighten-5, .lighten-5#header, .lighten-5#experience {
   background-color: #fafafa !important; }
 
-.grey-text.text-lighten-5, #experience .text-lighten-5.card-subtitle {
+.grey-text.text-lighten-5 {
   color: #fafafa !important; }
 
 .grey.lighten-4, .lighten-4#header, .lighten-4#experience {
   background-color: #f5f5f5 !important; }
 
-.grey-text.text-lighten-4, #experience .text-lighten-4.card-subtitle {
+.grey-text.text-lighten-4 {
   color: #f5f5f5 !important; }
 
 .grey.lighten-3, .lighten-3#header, .lighten-3#experience {
   background-color: #eeeeee !important; }
 
-.grey-text.text-lighten-3, #experience .text-lighten-3.card-subtitle {
+.grey-text.text-lighten-3 {
   color: #eeeeee !important; }
 
 .grey.lighten-2, .lighten-2#header, .lighten-2#experience {
   background-color: #e0e0e0 !important; }
 
-.grey-text.text-lighten-2, #experience .text-lighten-2.card-subtitle {
+.grey-text.text-lighten-2 {
   color: #e0e0e0 !important; }
 
 .grey.lighten-1, .lighten-1#header, .lighten-1#experience {
   background-color: #bdbdbd !important; }
 
-.grey-text.text-lighten-1, #experience .text-lighten-1.card-subtitle {
+.grey-text.text-lighten-1 {
   color: #bdbdbd !important; }
 
 .grey.darken-1, .darken-1#header, .darken-1#experience {
   background-color: #757575 !important; }
 
-.grey-text.text-darken-1, #experience .text-darken-1.card-subtitle {
+.grey-text.text-darken-1 {
   color: #757575 !important; }
 
 .grey.darken-2, .darken-2#header, .darken-2#experience {
   background-color: #616161 !important; }
 
-.grey-text.text-darken-2, #experience .text-darken-2.card-subtitle {
+.grey-text.text-darken-2 {
   color: #616161 !important; }
 
 .grey.darken-3, #header, .darken-3#experience {
   background-color: #424242 !important; }
 
-.grey-text.text-darken-3, #experience .text-darken-3.card-subtitle {
+.grey-text.text-darken-3 {
   color: #424242 !important; }
 
 .grey.darken-4, .darken-4#header, .darken-4#experience {
   background-color: #212121 !important; }
 
-.grey-text.text-darken-4, #experience .text-darken-4.card-subtitle {
+.grey-text.text-darken-4 {
   color: #212121 !important; }
 
 .black {
@@ -1588,7 +1588,7 @@
 .black-text {
   color: #000000 !important; }
 
-.white, #experience .card-content {
+.white {
   background-color: #FFFFFF !important; }
 
 .white-text {
@@ -1603,6 +1603,12 @@
 body {
   height: 100%;
   box-sizing: border-box; }
+  body .card-content {
+    width: 100%; }
+  body .card-title {
+    font-size: 20px; }
+  body .card-subtitle {
+    color: #9e9e9e !important; }
 
 .line {
   width: 100%;
@@ -1616,6 +1622,8 @@ body {
 
 #header {
   color: #fff; }
+  #header col {
+    padding: 50px; }
   #header #titleheader, #header h1, #header h2 {
     letter-spacing: 3px;
     text-align: center;
@@ -1642,12 +1650,6 @@ h3 {
   padding: 20px; }
   #experience .col {
     padding: 20px 20px 0 20px; }
-  #experience .card-title {
-    font-size: 20px; }
-  #experience ul {
-    padding-left: 30px; }
-  #experience li {
-    list-style-type: square; }
 
 .contents {
   padding: 20px 0; }
