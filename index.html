@@ -1,236 +1,140 @@
 <html>
 
-    <head>
-        <title>Olivia Wan</title>
-        
-        <!--mobile scaling-->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <title>Olivia Wan</title>
 
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-        
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css">
-        
-        <link rel="stylesheet" href="styles/style.css" type="text/css">
-    </head>
-    
-    <body>
-        <div class="container-fluid">
-            <div class="row" id="header">
-                <div class="col-lg-12">
-                    <h1>Olivia Wan</h1>
-                    <div style="max-width:800px;padding:0 20px;margin:auto;">
-                        <p>I'm a second year student at <a href="http://neu.edu">Northeastern University</a> in the <a href="http://ccis.neu.edu">College of Computer and Information Science</a>, pursuing a combined <a href="https://www.ccis.northeastern.edu/program/bs-combined-major-for-computer-science-and-biology/">BS in Computer Science and Biology</a>. I'm interested in creating and developing software, especially within a biological or medical context. Check out some projects I've worked on here!</p>
-                        <p>I'm currently on co-op at <a href="https://connect.curaspan.com/home/">naviHealth</a> in Newton, MA, working as a backend software engineer to develop Java and Spring-based web applications for post-acute care coordination.</p>
-                    </div>
+    <!--mobile scaling-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css">
+
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <div class="sidebar">
+            <div>
+                <center><img src="assets/portrait.jpg"></center>
+            </div>
+            <div class="header">
+                <h3>Olivia Wan</h3>
+            </div>
+            <div class="desc">
+                <p>I'm a third year student at <a href="http://neu.edu">Northeastern University</a> in the <a href="http://ccis.neu.edu">College of Computer and Information Science</a>, pursuing a combined <a href="https://www.ccis.northeastern.edu/program/bs-combined-major-for-computer-science-and-biology/">BS in Computer Science and Biology</a>. I'm interested in creating and developing software, especially within a biological or medical context. Check out some projects I've worked on here!</p>
+                <p>To see a full list of personal, extracurricular, and work projects I've worked on, click <a href="https://cryptic-harbor-49502.herokuapp.com/" target="_blank">here.</a></p>
+            </div>
+            <div class="links">
+                <a href="https://www.linkedin.com/in/olivia-wan-22645ab8" class="fa fa-linkedin" target="blank" title="linkedin"></a>
+                <a href="https://github.com/omwan/" class="fa fa-github" target="blank" title="github"></a>
+                <a href="mailto:wan.o@husky.neu.edu" class="fa fa-envelope" target="blank" title="email"></a>
+                <a href="/assets/resume_f17.pdf" class="fa fa-download" target="blank" title="resume"></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12 category-header">
+                    <h3>Work</h3>
                 </div>
             </div>
-            
-            <div id="projects">
-                
-                <div class="row" style="background:#000;">
-                    
-                    <div class="col-lg-6">
-                        <center><img src="assets/musiceditor.PNG" id="mobilephoto"></center>
-                        <div class="description">
-                            <h2>Music Editor</h2>
-                            <p>Project for CS 3500: Object-Oriented Design, taken in Fall 2016. Utilized a model-view-controller design pattern to create a program that parsed text files of songs and had editing capabilities, including adding, editing, and removing notes from a song. In addition, it supported several different view types: a GUI view that allows users to use the aforementioned editing capabilities, a MIDI view that converted the notes into MIDI to be heard, a console view that printed a graphical representation of the song to the console, and a composite view of the GUI and MIDI views that allows users to play/pause/restart the song. Jar file available for download in GitHub repo with detailed instructions on how to use. </p>
 
-                            <p>Note that GitHub repo may be made private to avoid plagiarism issues during school semesters. If you want access, send me an email.</p>
-                            <div id="mades">
-                                <span>java</span>
-                            </div>
-                            <div id="links">
-                                <a href="http://github.com/omwan/music-editor" target="blank">github</a>
-                            </div>
-                        </div><!--description-->
-                        <center><img src="assets/musiceditor.PNG" id="desktopphoto"></center>
-                    </div><!--col-->
-                    <div class="col-lg-6">
-                        <center><img src="assets/freecell.PNG" id="mobilephoto"></center>
-                        <div class="description">
-                            <h2>Freecell</h2>
-                            <p>Project for CS 3500: Object-Oriented Design, taken in Fall 2016. Simulated a game of Freecell using command-line commands, and printing the output to the console. Made with two models, one of which supports only single-card moves, and one which supports multi-card moves. Jar file available for download in GitHub repo with detailed instructions on gameplay.</p>
+            <div class="row entry">
+                <div class="col-md-4 entry-info">
+                    <b>Course Assistant, Logic and Computation</b>
+                    <br/> Northeastern University, College of Computer and Information Science
+                    <br/> May 2016 - June 2016, Sept. 2017 - present
+                </div>
+                <div class="col-md-8 entry-description">
+                    <ul>
+                        <li>Held weekly office hours to tutor first-year computer science students on functional programming, program correctness, and equational reasoning</li>
+                        <li>Graded exams and weekly group ACL2s/Lisp-based programming assignments</li>
+                        <li>Assisted with creation and development of exam materials; reported student progress to professor</li>
+                    </ul>
+                </div>
+            </div>
 
-                            <p>Note that GitHub repo may be made private to avoid plagiarism issues during school semesters. If you want access, send me an email.</p>
-                            <div id="mades">
-                                <span>java</span>
-                            </div>
-                            <div id="links">
-                                <a href="http://github.com/omwan/freecell" target="blank">github</a>
-                            </div>
-                        </div><!--description-->
-                        <center><img src="assets/freecell.PNG" id="desktopphoto"></center>
-                    </div><!--col-->
+            <div class="row entry">
+                <div class="col-md-4 entry-info">
+                    <b>Software Engineer Co-op</b>
+                    <br/>naviHealth
+                    <br/>Jan. 2017 - Aug. 2017
+                </div>
+                <div class="col-md-8 entry-description">
+                    <ul>
+                        <li>Researched and developed proofs of concepts for new features and technologies, including Kafka Streams API, MongoDB, JasperReports, and a more streamlined UI asset deployment process</li>
+                        <li>Built backend and frontend components for a common platform to host all naviHealth web applications; used AngularJS for UI, Java and Spring MVC/Boot in a microservice architecture for backend</li>
+                        <li>Refactored common services for global session, Spring Security, and application access and authorization</li>
+                        <li>Used Spring Data API to query relational and non-relational databases from Java backend</li>
+                        <li>Worked on upgrade of application platform to Tomcat 8 and Java 8 to improve performance</li>
+                        <li>Contributed to Agile process for software development using Atlassian tools (JIRA, Bitbucket, etc.)</li>
+                    </ul>
+                </div>
+            </div>
 
-                </div><!--row-->
+            <div class="row entry">
+                <div class="col-md-4 entry-info">
+                    <b>UX/Front-end Intern</b>
+                    <br/>Parameters
+                    <br/>Feb. 2016 - Aug. 2016
+                </div>
+                <div class="col-md-8 entry-description">
+                    <ul>
+                        <li>Built mobile-responsive company website with a modular design interface to support different design prototypes and concepts; developed on Tumblr platform with HTML/CSS, Bootstrap</li>
+                        <li>Used web development tools including Firebase, Angular, basic JavaScript, to build web app components</li>
+                        <li>Assisted with development of preliminary user flows, designs, and wireframes</li>
+                    </ul>
+                </div>
+            </div>
 
-                <div class="row" style="background:#000;">
+            <div class="row">
+                <div class="col-md-12 category-header">
+                    <h3>Extracurricular</h3>
+                </div>
+            </div>
 
-                    <div class="col-lg-6">
-                        <center><img src="assets/parameters.PNG" id="mobilephoto"></center>
-                        <div class="description">
-                            <h2>Parameters Website</h2>
-                            <p>During my internship at Parameters, a startup focused on deveoping software and technology for the music industry, one of my tasks was to build the company website on the Tumblr platform. Using the Tumblr theme development tools, I built the website with a modular design to accomodate the different designs that were being tested for the site, made a simplified customization interface to more easily be able to update the information on the website, and ensured that the page was responsive across all devices and screen sizes.</p>
-                            <p>Through this experience, I learned about the challenges that go into converting a design from a flat PSD image into a real website, and was responsible for building the site under a tight deadline.</p>
-                            <div id="mades">
-                                <span>html</span>
-                                <span>css</span>
-                                <span>jquery</span>
-                                <span>bootstrap</span>
-                                <span>tumblr</span>
-                            </div>
-                            <div id="links">
-                                <a href="http://parameters.co" target="blank">website</a>
-                            </div>
-                        </div><!--description-->
-                        <center><img src="assets/parameters.PNG" id="desktopphoto"></center>
-                    </div><!--col-->
-                    <div class="col-lg-6">
-                        <center><img src="assets/wiki.PNG" id="mobilephoto"></center>
-                        <div class="description">
-                            <h2>iGEM Wiki</h2>
-                            <p>For Northeastern University's 2016 iGEM Team, I designed and coded the online wiki, which documented the progress and results of their student-led bioengineering research project. In addition to building the pages, I was also responsible for figuring out how to embed a web app made by another team member into the wiki, which was tricky because it had a lot of dependencies and the MediaWiki servers that the iGEM wikis were hosted on did not allow any external linking of files.</p>
-                            <p>This was the first web development project I've done of this scale, ie: with this many individual pages. I learned how to best implement templating to ensure a consistent design across pages without overwhelming myself with code, and collaborated with coders from other teams on the best practices for coding on the MediaWiki platform.</p>
-                            <div id="mades">
-                                <span>html</span>
-                                <span>css</span>
-                                <span>bootstrap</span>
-                            </div>
-                            <div id="links">
-                                <a href="http://2016.igem.org/Team:Northeastern" target="blank">website</a>
-                                <a href="http://github.com/omwan/iGEM-wiki-neu16" target="blank">github</a>
-                            </div>
-                        </div><!--description-->
-                        <center><img src="assets/wiki.PNG" id="desktopphoto"></center>
-                    </div><!--col-->
-                    
-                </div><!--row-->
-                
-                <div class="row">
-                    
-                    <div class="col-lg-6">
-                        <center><img src="assets/playlist.jpg" id="mobilephoto"></center>
-                        <div class="description">
-                            <h2>Perfect Party Playlist</h2>
-                            <p>At HuskyHacks 2016, a 24-hour hackathon hosted by Northeastern's College of Computer and Information Science, I worked with a team of 3 others to build "Perfect Party Playlist." This was a Python-based Spotify playlist sorter, which sorts songs in a playlist based on attributes found in the Spotify API, such as variance, tempo, etc, according to our own custom Python algorithm. I was responsible for building the front-end and implementing the backend code into the front-end.</p>
-                            <p>This was the first project I had built at a hackathon, and my first time working with Flask and with  an API. I learned a lot about how OAuth works, and although the design is a little rough our team was proud that we were able to build a complete, functional project within 24 hours.</p>
-                            <div id="mades">
-                                <span>Python</span>
-                                <span>Flask</span>
-                                <span>Spotify API</span>
-                                <span>html</span>
-                                <span>css</span>
-                                <span>bootstrap</span>
-                            </div>
-                            <div id="links">
-                                <a href="http://github.com/omwan/playlist" target="blank">github</a>
-                                <a href="http://devpost.com/software/perfect-party-playlist" target="blank">devpost</a>
-                            </div>
-                        </div><!--description-->
-                        <center><img src="assets/playlist.jpg" id="desktopphoto"></center>
-                    </div><!--col-->
-                    <div class="col-lg-6">
-                        <center><img src="assets/island.jpg" id="mobilephoto"></center>
-                        <div class="description">
-                            <h2>Forbidden Island</h2>
-                            <p>One of the final assignments for CS 2510: Fundamentals of Computer Science 2, taken in Spring 2016. The goal was to build three island types: a "perfect" pyramid shaped mountain, a diamond mountain of random heights, and an island with randomly generated "terrain" including hills and lakes. The island can be traversed to locate helicopter pieces that must all be gathered and brought to the highest point of the island before the island sinks underwater.</p>
-                            <p>Note that GitHub repo may be made private to avoid plagiarism issues during school semesters. If you want access, send me an email.</p>
-                            <div id="mades">
-                                <span>java</span>
-                            </div>
-                            <div id="links">
-                                <a href="http://github.com/omwan/forbidden-island" target="blank">github</a>
-                            </div>
-                        </div><!--description-->
-                        <center><img src="assets/island.jpg" id="desktopphoto"></center>
-                    </div><!--col-->
-                    
-                </div><!--row-->
-                
-                <div class="row">
-                    
-                    <div class="col-lg-6">
-                        <center><img src="assets/maze.jpg" id="mobilephoto"></center>
-                        <div class="description">
-                            <h2>Kruskal Maze</h2>
-                            <p>One of the final assignments for CS 2510: Fundamentals of Computer Science 2, taken in Spring 2016. The goal was to build a radomly generated maze using Kruskal's algorithm for minimum spanning trees, and then to solve that maze with both breadth-first  and  depth-first search algorithms, as well as allowing for manual traversal of the mazes.</p>
-                            <p>Note that GitHub repo may be made private to avoid plagiarism issues during school semesters. If you want access, send me an email.</p>
-                            <div id="mades">
-                                <span>java</span>
-                            </div>
-                            <div id="links">
-                                <a href="http://github.com/omwan/kruskal-maze" target="blank">github</a>
-                            </div>
-                        </div><!--description-->
-                        <center><img src="assets/maze.jpg" id="desktopphoto"></center>
-                    </div><!--col-->
-                    <div class="col-lg-6">
-                        <center><img src="assets/tetris.jpg" id="mobilephoto"></center>
-                        <div class="description">
-                            <h2>Tetris</h2>
-                            <p>One of the final assignments for CS 2500: Fundamentals of Computer Science 1, taken in Fall 2015. The goal was to build Tetris using the Racket language.</p>
-                            <p>Note that GitHub repo may be made private to avoid plagiarism issues during school semesters. If you want access, send me an email.</p>
-                            <div id="mades">
-                                <span>racket</span>
-                            </div>
-                            <div id="links">
-                                <a href="http://github.com/omwan/tetris" target="blank">github</a>
-                            </div>
-                        </div><!--description-->
-                        <center><img src="assets/tetris.jpg" id="desktopphoto"></center>
-                    </div><!--col-->
-                    
-                </div><!--row-->
-                
-                <div class="row">
-                    
-                    <div class="col-lg-6" style="background:#000;">
-                        <center><img src="assets/battleship.jpg" id="mobilephoto"></center>
-                        <div class="description">
-                            <h2>Battleship</h2>
-                            <p>Final project for Honors CS, Spring 2015. The project was completely up to us, as long as it was built using Processing, so I decided to build a Battleship game played against a computer "AI" using built-in algorithms. There are two levels of the  AI, an easy mode with the AI firing random guesses, and a hard mode with the AI calculating the probability of specific ship locations using <a href="http://www.datagenetics.com/blog/december32011/" target="blank">this algorithm.</a></p>
-                            <p>This was the first programming/computer science course I took, so I was really pleased that I was able to build a fully functional game after taking a beginner programming course, and that I was able to implement a relatively complex algorithm into my program.</p>
-                            <div id="mades">
-                                <span>processing</span>
-                                <span>javascript</span>
-                            </div>
-                            <div id="links">
-                                <a href="http://github.com/omwan/battleship" target="blank">github</a>
-                                <a href="http://omwan.github.io/battleship" target="blank">website</a>
-                            </div>
-                        </div><!--description-->
-                        <center><img src="assets/battleship.jpg" id="desktopphoto"></center>
-                    </div><!--col-->
-                    
-                    <div class="col-lg-6" style="background:transparent;">
-                        <h2 id="more">More coming soon!</h2>
-                    </div><!--col-->
-                    
-                </div><!--row-->
+            <div class="row entry">
+                <div class="col-md-4 entry-info">
+                    <b>Volunteer</b>
+                    <br/>Northeastern University, Girls Who Code
+                    <br/>Sept. 2017 - present
+                </div>
+                <div class="col-md-8 entry-description">
+                    <ul>
+                        <li>Taught weekly class of [number] high-school students Python-based curriculum on introductory programming skills, including [skill 1], [skill 2], and [skill 3]</li>
+                    </ul>
+                </div>
+            </div>
 
-                <div id="footer">
-                    <div class="row">
-                        <div class="col-lg-12" id="linksout">
-                            <div id="contacts">
-                                <a href="https://www.linkedin.com/in/olivia-wan-22645ab8" class="fa fa-linkedin" target="blank" title="linkedin"></a>
-                                <a href="https://github.com/omwan/" class="fa fa-github" target="blank" title="github"></a>
-                                <a href="mailto:wan.o@husky.neu.edu" class="fa fa-envelope" target="blank" title="email"></a>
-                                <a href="/assets/resume_s17.pdf" class="fa fa-download" target="blank" title="resume"></a>
-                            </div>
-                        </div><!--col-->
-                    </div><!--row-->
-                    <div class="row">
-                        <div class="col-lg-12" id="copyright">
-                            © 2017 Olivia Wan, all rights reserved
-                        </div><!--col-->
-                    </div><!--row-->
-                </div><!--footer-->
+            <div class="row entry">
+                <div class="col-md-4 entry-info">
+                    <b>Wiki Coder</b>
+                    <br/>Northeastern University, iGEM Team
+                    <br/>Nov. 2015 - Oct. 2016
+                </div>
+                <div class="col-md-8 entry-description">
+                    <ul>
+                        <li>Researched custom bioengineering hardware and software for student-led bioengineering research project to be presented at annual iGEM Jamboree Conference</li>
+                        <li>Designed and coded online wiki site documenting progress and results of research, embedded custom software tools into site; built on MediaWiki platform with HTML/CSS and Bootstrap</li>
+                        <li>Worked on corporate outreach, networking, and sponsorship efforts</li>
+                    </ul>
+                </div>
+            </div>
 
-            </div><!--projects-->
-            
-        </div><!--container-->
-    </body>
+        </div>
+        <!--conatiner-->
+    </main>
+    
+    <footer>
+        <center>© 2017 Olivia Wan, all rights reserved</center>
+    </footer>
+</body>
 
 </html>
