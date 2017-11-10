@@ -70,6 +70,20 @@ main {
                 list-style-type: none;
             }
         }
+        
+        .entry-description {
+            ul {
+                padding-left: 0px;
+            }
+            li {
+                list-style-type: none;
+                margin-bottom:5px;
+            }
+        }
+        
+        h4 {
+//            text-align:center;
+        }
     }
 }
 
@@ -85,10 +99,10 @@ footer {
     header {
         .sidebar {
             position: fixed;
-            top: 100px;
+            padding-top: 100px;
             left: 0px;
             width: 20%;
-            height: calc(100% - 200px);
+            height: 100%;
             border-right: 1px solid #ccc;
         }
     }
@@ -109,9 +123,6 @@ footer {
         .entry {
             .entry-info {
                 text-align: right;
-            }
-            .entry-description ul {
-                padding-left: 20px;
             }
         }
     }
