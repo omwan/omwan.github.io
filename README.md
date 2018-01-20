@@ -1,4 +1,4 @@
 # omwan.github.io
-personal website
 
-still very much a wip
+Personal website, version 4.  
+Last updated Jan 2018.
