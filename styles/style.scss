@@ -52,7 +52,6 @@ main {
         text-align:center;
         font-weight: 300;
         margin-top:-25px;
-        margin-bottom:100px;
 
         span {
             display:inline-block;
@@ -72,6 +71,8 @@ main {
 
     #skills {
 
+        text-align: center;
+
         ul {
             padding-left:0px;
             margin-top:5px;
@@ -85,10 +86,6 @@ main {
 
         .exp-line {
             margin-bottom:20px;
-
-            .date {
-                float:right;
-            }
         }
     }
 
@@ -118,12 +115,18 @@ footer {
 }
 
 /*computer screens*/
-@media screen and (min-width:1366px) {
+@media screen and (min-width:992px) {
 
     header {
         .row {
-            margin:250px auto;
+            margin:350px auto;
             max-width:900;
+        }
+    }
+
+    main {
+        h3 {
+            margin-bottom:100px;
         }
     }
 
@@ -137,17 +140,52 @@ footer {
         margin-top:50px;
     }
 
-    #skills {
-        .content {
-            padding-left:100px;
-        } 
-    }
-}
+    #experience {
+        .date {
+            float:right;
+        }
 
-/*tablet/small computer screens*/
-@media screen and (min-width:992px) {
+        .mdate {
+            display:none;
+        }
+    }
 }
 
 /*mobile screens*/
 @media screen and (max-width:991px) {
+
+    header {
+        .row {
+            margin:250px auto;
+        }
+    }
+
+    main {
+        h3 {
+            margin-bottom:50px;
+        }
+
+        #yikes {
+            overflow: hidden;
+            margin-bottom:30px;
+        }
+
+        #experience {
+            .date {
+                display:none;
+            }
+
+            .mdate {
+                display:block;
+            }
+        }
+    }
+
+    .row  {
+        margin-bottom:100px;
+    }
+
+    footer {
+        margin-top:-50;
+    }
 }
