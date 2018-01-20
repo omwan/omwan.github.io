@@ -6,138 +6,148 @@
 }
 
 $transition-time: .3s;
+
 body {
     font-family: roboto;
     font-size: 15px;
-    background: #fff;
-    color: #555;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+
     a,
     a:hover {
+        color:#aaa;
         text-decoration: none;
         @include transition($transition-time);
     }
 }
 
 header {
-    .sidebar {
-        text-align: center;
-        padding: 0 40px;
-        div {
-            margin: 20px 0;
+    text-align: center;
+    text-transform: lowercase;
+
+    h1 {
+        font-weight: 300;
+        span {
+            display:inline-block;
+            padding:20px;
+            color:#fff;
+            background:#000;
         }
-        img {
-            width: 200px;
-            height: 200px;
-            display: block;
-            border-radius: 100%;
-        }
-        .desc {
-            font-size: 14px;
-            color: #888;
-        }
-        .links {
-            margin-top: 20px;
-            a {
-                display: inline-block;
-                color: #000;
-                margin: 0 5px;
-                font-size: 20px;
-            }
-            a:hover {
-                color: #888;
-            }
-        }
+    }
+
+    h2 {
+        color:#aaa;
+        letter-spacing: 3px;
+        margin-top:100px;
     }
 }
 
 main {
-    .category-header h3 {
-        border-bottom: 1px solid #ccc;
-        text-align: center;
-        padding-bottom: 20px;
-        margin-bottom: 30px;
+
+    .row  {
+        border-top:1px solid #ccc;
     }
-    .entry {
-        margin-bottom: 20px;
-        .entry-info {
-            ul {
-                padding-left: 0px;
-            }
+
+    h3 {
+        text-align:center;
+        font-weight: 300;
+        margin-top:-25px;
+        margin-bottom:100px;
+
+        span {
+            display:inline-block;
+            background:#000;
+            color:#fff;
+            text-align:center;
+            padding:10px 20px;
+        }
+    }
+
+    #about {
+
+        #links {
+            text-align: center;
+        }
+    }
+
+    #skills {
+
+        ul {
+            padding-left:0px;
+            margin-top:5px;
             li {
                 list-style-type: none;
             }
         }
-        
-        .entry-description {
-            ul {
-                padding-left: 0px;
-            }
-            li {
-                list-style-type: none;
-                margin-bottom:5px;
+    }
+
+    #experience {
+
+        .exp-line {
+            margin-bottom:20px;
+
+            .date {
+                float:right;
             }
         }
-        
-        h4 {
-//            text-align:center;
+    }
+
+    #resume-link {
+        margin-top:30px;
+        text-align: center;
+        a {
+            color:#aaa;
         }
+    }
+
+    #projects {
+        .project {
+            margin-bottom:30px;
+        }
+    }
+
+    .content {
+        padding:20px 0;
     }
 }
 
 footer {
-    padding-bottom: 20px;
-    font-siz: 14px;
-    color: #888;
-    margin-top: auto;
+    text-align: center;
+    padding-bottom:20px;
+    color:#aaa;
 }
 
-//computer screens
+/*computer screens*/
 @media screen and (min-width:1366px) {
+
     header {
-        .sidebar {
-            position: fixed;
-            padding-top: 100px;
-            left: 0px;
-            width: 20%;
-            height: 100%;
-            border-right: 1px solid #ccc;
+        .row {
+            margin:250px auto;
+            max-width:900;
         }
     }
-    main {
-        .container-fluid {
-            box-sizing: content-box;
-            padding-left: calc(20% + 30px);
-            max-width: 1200px;
-            margin: 0px;
-            margin-top:50px;
-        }
+
+    .content {
+        max-width: 900px;
+        margin:auto;
+    }
+
+    .row  {
+        margin-bottom:200px;
+        margin-top:50px;
+    }
+
+    #skills {
+        .content {
+            padding-left:100px;
+        } 
     }
 }
 
-//tablet/small computer screens
+/*tablet/small computer screens*/
 @media screen and (min-width:992px) {
-    main {
-        .entry {
-            .entry-info {
-                text-align: right;
-            }
-        }
-    }
 }
 
-//mobile screens
+/*mobile screens*/
 @media screen and (max-width:991px) {
-    main {
-        .entry {
-            .entry-description {
-                margin-top: 5px;
-            }
-            .entry-info {
-                text-align: left;
-            }
-        }
-    }
 }

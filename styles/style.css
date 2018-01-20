@@ -1,87 +1,88 @@
 body {
   font-family: roboto;
   font-size: 15px;
-  background: #fff;
-  color: #555;
   display: flex;
-  flex-direction: column;
-  min-height: 100vh; }
+  flex-direction: column; }
   body a,
   body a:hover {
+    color: #aaa;
     text-decoration: none;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease-in-out; }
 
-header .sidebar {
+header {
   text-align: center;
-  padding: 0 40px; }
-  header .sidebar div {
-    margin: 20px 0; }
-  header .sidebar img {
-    width: 200px;
-    height: 200px;
-    display: block;
-    border-radius: 100%; }
-  header .sidebar .desc {
-    font-size: 14px;
-    color: #888; }
-  header .sidebar .links {
-    margin-top: 20px; }
-    header .sidebar .links a {
+  text-transform: lowercase; }
+  header h1 {
+    font-weight: 300; }
+    header h1 span {
       display: inline-block;
-      color: #000;
-      margin: 0 5px;
-      font-size: 20px; }
-    header .sidebar .links a:hover {
-      color: #888; }
+      padding: 20px;
+      color: #fff;
+      background: #000; }
+  header h2 {
+    color: #aaa;
+    letter-spacing: 3px;
+    margin-top: 100px; }
 
-main .category-header h3 {
-  border-bottom: 1px solid #ccc;
+main .row {
+  border-top: 1px solid #ccc; }
+main h3 {
   text-align: center;
-  padding-bottom: 20px;
-  margin-bottom: 30px; }
-main .entry {
-  margin-bottom: 20px; }
-  main .entry .entry-info ul {
-    padding-left: 0px; }
-  main .entry .entry-info li {
+  font-weight: 300;
+  margin-top: -25px;
+  margin-bottom: 100px; }
+  main h3 span {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px; }
+main #about #links {
+  text-align: center; }
+main #skills ul {
+  padding-left: 0px;
+  margin-top: 5px; }
+  main #skills ul li {
     list-style-type: none; }
-  main .entry .entry-description ul {
-    padding-left: 0px; }
-  main .entry .entry-description li {
-    list-style-type: none;
-    margin-bottom: 5px; }
+main #experience .exp-line {
+  margin-bottom: 20px; }
+  main #experience .exp-line .date {
+    float: right; }
+main #resume-link {
+  margin-top: 30px;
+  text-align: center; }
+  main #resume-link a {
+    color: #aaa; }
+main #projects .project {
+  margin-bottom: 30px; }
+main .content {
+  padding: 20px 0; }
 
 footer {
+  text-align: center;
   padding-bottom: 20px;
-  font-siz: 14px;
-  color: #888;
-  margin-top: auto; }
+  color: #aaa; }
 
+/*computer screens*/
 @media screen and (min-width: 1366px) {
-  header .sidebar {
-    position: fixed;
-    padding-top: 100px;
-    left: 0px;
-    width: 20%;
-    height: 100%;
-    border-right: 1px solid #ccc; }
+  header .row {
+    margin: 250px auto;
+    max-width: 900; }
 
-  main .container-fluid {
-    box-sizing: content-box;
-    padding-left: calc(20% + 30px);
-    max-width: 1200px;
-    margin: 0px;
-    margin-top: 50px; } }
-@media screen and (min-width: 992px) {
-  main .entry .entry-info {
-    text-align: right; } }
-@media screen and (max-width: 991px) {
-  main .entry .entry-description {
-    margin-top: 5px; }
-  main .entry .entry-info {
-    text-align: left; } }
+  .content {
+    max-width: 900px;
+    margin: auto; }
+
+  .row {
+    margin-bottom: 200px;
+    margin-top: 50px; }
+
+  #skills .content {
+    padding-left: 100px; } }
+/*tablet/small computer screens*/
+/*mobile screens*/
 
 /*# sourceMappingURL=style.css.map */
