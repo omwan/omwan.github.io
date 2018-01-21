@@ -66,10 +66,10 @@ footer {
   padding-bottom: 20px;
   color: #aaa; }
 
-/*computer screens*/
+/*tablet screens*/
 @media screen and (min-width: 992px) {
   header .row {
-    margin: 350px auto;
+    margin: 250px auto;
     max-width: 900; }
 
   main h3 {
@@ -86,7 +86,17 @@ footer {
   #experience .date {
     float: right; }
   #experience .mdate {
-    display: none; } }
+    display: none; }
+
+  footer {
+    margin-top: -50px; } }
+/*computer screens*/
+@media screen and (min-width: 1366px) {
+  header .row {
+    margin: 350px auto; }
+
+  footer {
+    margin-top: 0px; } }
 /*mobile screens*/
 @media screen and (max-width: 991px) {
   header .row {

@@ -115,12 +115,12 @@ footer {
     color:#aaa;
 }
 
-/*computer screens*/
+/*tablet screens*/
 @media screen and (min-width:992px) {
 
     header {
         .row {
-            margin:350px auto;
+            margin:250px auto;
             max-width:900;
         }
     }
@@ -149,6 +149,22 @@ footer {
         .mdate {
             display:none;
         }
+    }
+
+    footer {
+        margin-top: -50px;
+    }
+}
+
+/*computer screens*/
+@media screen and (min-width:1366px) {
+
+    header .row {
+        margin:350px auto;
+    }
+
+    footer {
+        margin-top:0px;
     }
 }
 
