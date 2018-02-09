@@ -12,6 +12,8 @@ body {
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease-in-out; }
+  body b, body strong {
+    font-weight: 500; }
 
 header {
   text-align: center;
