@@ -20,7 +20,7 @@ body {
         text-decoration: none;
         @include transition($transition-time);
     }
-    
+
     b, strong {
         font-weight:500;
     }
